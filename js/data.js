@@ -3,7 +3,7 @@ const about_description = ["I am a rising second-year student, majoring in Compu
 
 const skills = [
   {
-    img: "http://pluspng.com/img-png/raspberry-pi-png-raspberry-pi-2-model-b-1560.png",
+    img: "https://pluspng.com/img-png/raspberry-pi-png-raspberry-pi-2-model-b-1560.png",
     title: "Raspberry Pi"
   },
   {
@@ -15,7 +15,7 @@ const skills = [
     title: "Github"
   },
   {
-    img: "http://ziobron.net/media/blogs/blog/quick-uploads/p38/_evocache/python-logo.png/fit-520x390.png?mtime=1462471735",
+    img: "https://ziobron.net/media/blogs/blog/quick-uploads/p38/_evocache/python-logo.png/fit-520x390.png?mtime=1462471735",
     title: "Python"
   },
   {
@@ -39,7 +39,7 @@ const skills = [
     title: "Windows"
   },
   {
-    img: "http://icons.iconarchive.com/icons/ampeross/smooth/256/Apple-Finder-icon.png",
+    img: "https://icons.iconarchive.com/icons/ampeross/smooth/256/Apple-Finder-icon.png",
     title: "macOS"
   },
   {
@@ -93,7 +93,7 @@ const awards = [
 const projects = [
   // "assets/bloxxers.png" or "www"
   {
-    image: "http://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
+    image: "https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
     title: "SiteSeer: Visually Impaired Navigator",
     skills: "Raspberry Pi • Python • Google Cloud",
     link: "www.nyu.edu",
