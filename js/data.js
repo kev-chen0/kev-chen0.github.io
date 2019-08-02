@@ -92,14 +92,14 @@ const awards = [
 
 const projects = [
   // "assets/bloxxers.png" or "www"
-  {
-    image: "https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
-    title: "SiteSeer: Visually Impaired Navigator",
-    skills: "Raspberry Pi • Python • Google Cloud",
-    link: "www.nyu.edu",
-    description: "Course Engineering Project • SiteSeer is a cost-effective application that improves the accessibility of travel for the visually impaired to navigate in the urban environment. Those who are visually impaired will find it difficult to complete what may be perceived as simple tasks by those who are not disabled such as crossing streets, finding directions, and safely reaching one’s destination. This project directly addresses the demand for more disability-friendly applications for the blind. • Configured Google Cloud & Camera/Sensors to operate on Raspberry Pi to provide feedback such as using image recognition and learning by utilizing Google APIs to provide directions and write an algorithm • Created iOS App: to obtain GPS location from the phone, provide live-feed, speech services (speech-to-text to get destination from user, text-to-speech to give user instructions)",
-    video: "https://www.youtube.com/embed/6Ao1gqjm5do"
-  },
+  // {
+  //   image: "https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
+  //   title: "SiteSeer: Visually Impaired Navigator",
+  //   skills: "Raspberry Pi • Python • Google Cloud",
+  //   link: "www.nyu.edu",
+  //   description: "Course Engineering Project • SiteSeer is a cost-effective application that improves the accessibility of travel for the visually impaired to navigate in the urban environment. Those who are visually impaired will find it difficult to complete what may be perceived as simple tasks by those who are not disabled such as crossing streets, finding directions, and safely reaching one’s destination. This project directly addresses the demand for more disability-friendly applications for the blind. • Configured Google Cloud & Camera/Sensors to operate on Raspberry Pi to provide feedback such as using image recognition and learning by utilizing Google APIs to provide directions and write an algorithm • Created iOS App: to obtain GPS location from the phone, provide live-feed, speech services (speech-to-text to get destination from user, text-to-speech to give user instructions)",
+  //   video: "https://www.youtube.com/embed/6Ao1gqjm5do"
+  // },
   {
     image: "https://www.nyu.edu/content/nyu/en/about/news-publications/news/2016/june/grade-school-students-teach-a-robot-to-help-themselves-learn-geometry/jcr:content/page/image.img.620.high.jpg/1471387584497.jpg",
     title: "Tangible Activities for Geometry: NYU-X",
