@@ -39,7 +39,7 @@ const skills = [
     title: "Windows"
   },
   {
-    img: "https://icons.iconarchive.com/icons/ampeross/smooth/256/Apple-Finder-icon.png",
+    img: "https://banner2.kisspng.com/20180415/vae/kisspng-finder-computer-icons-apple-logo-5ad351903f2c75.5613029815237984162588.jpg",
     title: "macOS"
   },
   {
