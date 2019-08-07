@@ -196,6 +196,7 @@ const loadTimeline = (info) => {
     secondDiv.classList = "line-container"
 
     title.classList = "container-title"
+    title.style.color = "black"
     subtitle.classList = "container-subtitle"
     desc.classList = "container-desc"
     location.classList = "container-location"
@@ -267,7 +268,7 @@ const loadAwards = (list) => {
     let div = document.createElement("div")
     let inner = document.createElement("div")
     let org = document.createElement("span")
-    let details = document.createElement("span")
+    let details = document.createElement("h5")
     let br = document.createElement("br")
 
     div.classList = "award col-md-4 col-lg-3"
