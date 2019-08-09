@@ -50,9 +50,9 @@ const skills = [
 
 const experience = [
   {
-    date: "May 2019 - Present",
-    title: "Undergraduate Research Intern",
-    desc: "Summer Undergraduate Research Intern at NYU Rory Meyers College of Nursing Mentors: Dr. Win Burleson and Dr. Jeremy Rowe and Gustavo de Oliveira Almeida • Collaborate on assistive technology for dementia by integrating Raspberry Pi and computer vision • Developed functioning interface for robotic-assisted geometry system using Python & MQTT and improved research efficiency by 30% by designing iOS mobile application and integrating RabbitMQ • Led research project to develop robotic based learning system using OptiTrack motion capture system and Python to teach geometry to middle-school children at NYU-X Lab. • Worked on additional research project to develop computer vision system for individuals with dementia at NYU College of Nursing.",
+    date: "May 2019 - August 2019",
+    title: "Research Intern",
+    desc: "Summer Undergraduate Research Intern at NYU Rory Meyers College of Nursing Mentors: Dr. Win Burleson and Dr. Jeremy Rowe and Gustavo de Oliveira Almeida • Collaborated on assistive technology for dementia by integrating Raspberry Pi and computer vision • Developed functioning interface for robotic-assisted geometry system using Python & MQTT and improved research efficiency by 30% by designing iOS mobile application and integrating RabbitMQ • Led research project to develop robotic based learning system using OptiTrack motion capture system and Python to teach geometry to middle-school children at NYU-X Lab. • Worked on additional research project to develop computer vision system for individuals with dementia at NYU College of Nursing.",
     logo: "https://media.licdn.com/dms/image/C4D0BAQFDeOVQn-KX0Q/company-logo_400_400/0?e=1571875200&v=beta&t=aH0A64DH70Ms8ytLU6KaXFuJua7bZNbA1oHNQr5dEQg"
   },
   {
@@ -102,14 +102,14 @@ const projects = [
   // },
   {
     image: "https://www.nyu.edu/content/nyu/en/about/news-publications/news/2016/june/grade-school-students-teach-a-robot-to-help-themselves-learn-geometry/jcr:content/page/image.img.620.high.jpg/1471387584497.jpg",
-    title: "Tangible Activities for Geometry: NYU-X",
+    title: "Tangible Activities for Geometry: NYU-X Lab",
     skills: "Motion Capture, MQTT Networking, iOS app",
     link: "www.nyu-x.org",
     description: "Research Project • Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture at NYU-X lab."
   },
   {
     image: "https://github.com/kevin-c0/Pong-iOS-App/raw/master/pong.gif",
-    title: "Ping Pong Game: iOS Bootcamp App",
+    title: "Ping Pong Game: iOS Bootcamp",
     skills: "Swift",
     link: "www.github.com",
     description: "Proof of concept iOS game in Swift with features: 2-Player and Computer and background music. The pong game was created using SpriteKit in Xcode and is developed in Game template. Developed to explore new iOS features such as background music and multi-touch on iOS devices."
