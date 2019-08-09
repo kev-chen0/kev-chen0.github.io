@@ -269,12 +269,13 @@ const loadAwards = (list) => {
     let inner = document.createElement("div")
     let org = document.createElement("span")
     let details = document.createElement("h5")
-    let br = document.createElement("br")
+    let br = document.createElement("BR")
 
     div.classList = "award col-md-4 col-lg-3"
     inner.classList = "container-fluid"
     org.classList = "org"
     details.classList = "details"
+    details.style.fontFamily = "Poppins"
 
     details.innerText = award.title
     org.innerText = award.org
@@ -291,7 +292,7 @@ const main = () => {
   loadAbout(about_description)
   loadSkills(skills)
   loadJobs(experience)
-  loadProjects(projects)
+  // loadProjects(projects)
   loadAwards(awards)
   loadTimeline(timeline)
 }
