@@ -18,6 +18,13 @@ section .content {
   z-index: 5;
 }
 
+.linen {
+  background-color: #FDF2E9.
+  stroke: #FDF2E9;
+}
+.lily_white { background-color: #EAFAF1; }
+.white_lilac { background-color: #F5EEF8; }
+.rose_white { background-color: #FBEEE6; }
 .yellow_med { background-color: #ebffab; }
 .red_1 { background-color: #FED9D9; }
 .blue_1 { background-color: #96EDFF; }
@@ -35,6 +42,18 @@ section .content {
 .seashell { background-color: #FFF5EE; }
 .MediumTurquoise	 { background-color: #48D1CC }
 
+.linen-svg {
+  fill: #FDF2E9;
+  stroke: #FDF2E9;
+}
+.white_lilac-svg {
+  fill: #F5EEF8;
+  stroke: #F5EEF8;
+}
+.rose_white-svg{
+  fill: #FBEEE6;dddddddd
+  stroke: #FBEEE6;
+}
 .yellow_med-svg {
   fill: #ebffab;
   stroke: #ebffab;
@@ -112,6 +131,18 @@ section .content {
 .orange-text { color: #FFA500 }
 .royal-blue-text { color: #4169E1; }
 
+.linen-shadow {
+  background-color: rgba(253, 242, 233, 0.4) !important;
+  box-shadow: 0px -5px 20px ##FDF2E9 !important;;
+}
+.white_lilac-shadow {
+  background-color: rgba(245, 238, 248, 0.4) !important;
+  box-shadow: 0px -5px 20px #F5EEF8 !important;;
+}
+.rose_white-shadow {
+  background-color: rgba(251, 238, 230, 0.4) !important;
+  box-shadow: 0px -5px 20px #FBEEE6 !important;;
+}
 .yellow_med-shadow {
   background-color: rgba(235, 255, 171, 0.4) !important;
   box-shadow: 0px -5px 20px #ebffab !important;;
