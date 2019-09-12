@@ -3,20 +3,20 @@ const about_description = ["I am a rising second-year student, majoring in Compu
 
 const skills = [
   {
-    img: "https://pluspng.com/img-png/raspberry-pi-png-raspberry-pi-2-model-b-1560.png",
-    title: "Raspberry Pi"
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/7/71/Arduino-uno-perspective-transparent.png",
-    title: "Arduino"
-  },
-  {
-    img: "https://news.bitcoin.com/wp-content/uploads/2018/06/880593_media_512x512-300x300.png",
-    title: "Github"
-  },
-  {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
     title: "Python"
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
+    title: "C++"
+  },
+  {
+    img: "https://www.softexia.com/wp-content/uploads/2017/04/Java-logo.png",
+    title: "Java"
+  },
+  {
+    img: "https://apprendre-a-coder.com/wp/wp-content/uploads/2019/01/swift.png",
+    title: "Swift"
   },
   {
     img: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/super_cloud.png",
@@ -27,12 +27,16 @@ const skills = [
     title: "iOS App Development"
   },
   {
-    img: "https://www.softexia.com/wp-content/uploads/2017/04/Java-logo.png",
-    title: "Java"
+    img: "https://pluspng.com/img-png/raspberry-pi-png-raspberry-pi-2-model-b-1560.png",
+    title: "Raspberry Pi"
   },
   {
-    img: "https://apprendre-a-coder.com/wp/wp-content/uploads/2019/01/swift.png",
-    title: "Swift"
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/71/Arduino-uno-perspective-transparent.png",
+    title: "Arduino"
+  },
+  {
+    img: "https://news.bitcoin.com/wp-content/uploads/2018/06/880593_media_512x512-300x300.png",
+    title: "Github"
   },
   {
     img: "https://www.lifewire.com/thmb/zLLj2KX23akNiw1i3ndWRs4KUBc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/WindowsBlueLogo-5774fe3b5f9b58587534ed22.png",
