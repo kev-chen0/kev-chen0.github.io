@@ -18,6 +18,7 @@ section .content {
   z-index: 5;
 }
 
+.white { background-color: #fff; }
 .azure { background-color: #FBFCFC; }
 .linen { background-color: #FDF2E9; }
 .lily_white { background-color: #EAFAF1; }
@@ -629,7 +630,7 @@ section .content {
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
-  padding: 10px 40px;
+  padding: 10px 50px;
   margin: 0 auto;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -639,9 +640,9 @@ section .content {
 
 .award .details {
   color: white;
-  font-weight: normal;
-  background: -webkit-linear-gradient(blue, red);
-  font-size: 14px;
+  font-weight: bold;
+  background: red; /*-webkit-linear-gradient(blue, red);*/
+  font-size: 18px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

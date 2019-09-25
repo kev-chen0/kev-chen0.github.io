@@ -267,13 +267,14 @@ const loadAwards = (list) => {
   list.map(award => {
     let div = document.createElement("div")
     let inner = document.createElement("div")
-    let org = document.createElement("span")
-    let details = document.createElement("h5")
+    let org = document.createElement("h6")
+    let details = document.createElement("h1")
     let br = document.createElement("BR")
 
     div.classList = "award col-md-4 col-lg-3"
     inner.classList = "container-fluid"
     org.classList = "org"
+    org.style.fontWeight = "bold"
     details.classList = "details"
     details.style.fontFamily = "Poppins"
 
