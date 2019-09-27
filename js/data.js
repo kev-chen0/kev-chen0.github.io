@@ -97,7 +97,7 @@ const awards = [
   },
   {
     org: "FIRST Robotics Inspire Award​",
-    title: "Advanced to NYC Championships & Strong Outreach for FIRST Robotics"
+    title: "Advanced to NYC Championships & Strong Outreach for STEM"
   }
 ]
 
