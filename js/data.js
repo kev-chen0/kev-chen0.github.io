@@ -6,6 +6,14 @@ const skills = [
     title: "Python"
   },
   {
+    img: "https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png",
+    title: "Django"
+  },
+  {
+    img: "https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
+    title: "HTML/CSS"
+  },
+  {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
     title: "C++"
   },
