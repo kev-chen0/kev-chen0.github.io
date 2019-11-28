@@ -1,4 +1,4 @@
-const about_description = ["I am a second-year student, majoring in Computer Science, at NYU Tandon School of Engineering. I aspire to combine my passions in programming and engineering by exploring fields such as IoT and robotics. During my free time, I enjoy creating projects in assistive technology and community using IoT with Arduino/Raspberry Pi and cloud computing along with iOS app development."]
+const about_description = ["I am a second-year student, majoring in Computer Science, at NYU Tandon School of Engineering. I aspire to combine my passions in programming and engineering by exploring fields such as physical computing, IoT, and software engineering. During my free time, I enjoy creating projects in assistive technology and community using IoT with Arduino/Raspberry Pi and cloud computing along with iOS app development."]
 const skills = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
