@@ -109,7 +109,7 @@ const projects = [
     title: "SiteSeer",
     logo: "https://media.licdn.com/dms/image/C4D12AQGPoSjQPvz2ZA/article-cover_image-shrink_720_1280/0?e=1580342400&v=beta&t=lgAX1ZhIszsYSOVvulTKpI73EANZFOGy0Jmoq1Auz38",
     date: "January 2019 – May 2019",
-    link: "https://www.linkedin.com/pulse/first-year-design-project-disability-friendly-navigation-kevin-chen/"
+    link: "https://www.linkedin.com/pulse/first-year-design-project-disability-friendly-navigation-kevin-chen"
   }
 ]
 
