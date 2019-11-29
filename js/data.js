@@ -86,8 +86,8 @@ const experience = [
     date: "May 2019 - August 2019",
     title: "Research Intern",
     desc: "Summer Undergraduate Research Intern at NYU Rory Meyers College of Nursing Mentors: Dr. Win Burleson and Dr. Jeremy Rowe and Gustavo de Oliveira Almeida • Collaborated on assistive technology for dementia by integrating Raspberry Pi and computer vision • Developed functioning interface for robotic-assisted geometry system using Python & MQTT and improved research efficiency by 30% by designing iOS mobile application and integrating RabbitMQ • Led research project to develop robotic based learning system using OptiTrack motion capture system and Python to teach geometry to middle-school children at NYU-X Lab. • Worked on additional research project to develop computer vision system for individuals with dementia at NYU College of Nursing.",
-    logo: "http://www.nyu-x.org/uploads/1/2/4/4/12448586/4952977.png",
-    site: "http://www.nyu-x.org"
+    logo: "https://www.nyu-x.org/uploads/1/2/4/4/12448586/4952977.png",
+    site: "https://www.nyu-x.org"
   },
   {
     date: "January 2019 - May 2019",
