@@ -11,3 +11,4 @@
 
 - [X] Google Analytics
 - [X] typed.js
+- [X] Custom Domain
