@@ -16,7 +16,7 @@
   color: black;
   font-size: 48px;
   max-width: 700px;
-  margin: 50px auto;
+  margin: 20px auto;
   position: relative;
 }
 .linking .link a{
@@ -210,7 +210,7 @@ a:hover {
 }
 
 .sect-mt4 {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 /*--/ Title s /--*/
@@ -297,6 +297,7 @@ a:hover {
   line-height: 1.4;
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
+  background-color: #ffffff;
   transition: all 500ms ease;
 }
 
@@ -1145,7 +1146,7 @@ a:hover {
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 0rem 0 0 0;
 }
 
 .contact-mf {
@@ -1159,7 +1160,7 @@ a:hover {
 footer {
   text-align: center;
   color: #fff;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 footer .copyright {
