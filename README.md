@@ -12,3 +12,7 @@
 - [X] Google Analytics
 - [X] typed.js
 - [X] Custom Domain
+
+### Resources:
+
+- Lightbox Effect: https://fancyapps.com/fancybox/3/docs/
