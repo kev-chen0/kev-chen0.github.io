@@ -332,6 +332,11 @@ const loadAwards = (list) => {
 
 const loadSummits = (list) => {
 	list.map(summit => {
+    let a_tag = document.createElement("a")
+    a_tag.setAttribute("data-fancybox", "")
+    a_tag.setAttribute("data-type", "iframe")
+    a_tag.setAttribute("data-src", "https://fancyapps.com/fancybox/3/docs/#iframe")
+
 		let outer_div = document.createElement("div")
 		outer_div.classList = "col-md-4"
 		let cardblog_div = document.createElement("div")
@@ -391,7 +396,11 @@ const loadSummits = (list) => {
 		cardblog_div.append(cardbody_div)
 		cardblog_div.append(cardfooter_div)
 
-		outer_div.append(cardblog_div)
+    a_tag.append(cardblog_div)
+
+		outer_div.append(a_tag)
+
+    // a_tag.append(outer_div)
 
 		summitCont.append(outer_div)
 	})
