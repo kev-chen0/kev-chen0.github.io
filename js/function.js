@@ -1,3 +1,14 @@
+$(document).ready(function() {
+
+  $('.testimonial-box').on('click', function(event){
+    var $this = $(this);
+    if($this.hasClass('clicked')){
+      $this.removeAttr('style').removeClass('clicked');
+    }
+  });
+
+});
+
 (function ($) {
 	"use strict";
 	var nav = $('nav');
@@ -111,7 +122,7 @@
 		responsive: {
 			0: {
 				items: 1,
-			}
+			},
 		}
 	});
 
@@ -129,6 +140,11 @@
 		}
 	});
 
+	// $('#activities-cont').on('click', '.item', function () {
+  //   alert("click");
+	// 	console.log("hello");
+	// });
+
 	/*--/ Activities owl /--*/
 	$('#activities-cont').owlCarousel({
 		margin: 20,
@@ -145,6 +161,20 @@
 
 	/*--/ Awards owl /--*/
 	$('#testimonial-mf').owlCarousel({
+		margin: 20,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+
+	/*--/ Awards owl /--*/
+	$('#summit-cont').owlCarousel({
 		margin: 20,
 		autoplay: true,
 		autoplayTimeout: 2000,

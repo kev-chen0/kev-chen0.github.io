@@ -89,8 +89,19 @@
 .fix_center {
   margin: 0 auto;
 }
-
-
+#job-cont .testimonial-box{
+  display: block;
+  cursor: pointer;
+  padding: 30px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+#job-cont .testimonial-box:hover{ }
 
 
 

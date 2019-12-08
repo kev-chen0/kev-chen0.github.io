@@ -18,3 +18,4 @@
 - Lightbox Effect: https://fancyapps.com/fancybox/3/docs/
 - Files relative to previous directory: use ../
 - Using JS to create html page: document.write('<html><body><h2>HTML</h2></body></html>');
+- Clickable Own Carousel: https://www.mokuge.com/down/jdt/113/demos/click.html
