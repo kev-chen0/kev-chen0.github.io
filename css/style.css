@@ -78,13 +78,16 @@
   color: white;
 }
 .img {
-    position: relative;
-    float: left;
-    width:  100px;
-    height: 100px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+  position: relative;
+  float: left;
+  width:  100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+.fix_center {
+  margin: 0 auto;
 }
 
 
@@ -273,7 +276,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.90);
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -911,6 +914,11 @@ a:hover {
 /*======================================
 //--//-->   TESTIMONIALS
 ======================================*/
+
+.description-box {
+  color: #000000;
+  text-align: left;
+}
 
 .testimonials .owl-carousel .owl-item img {
   width: auto;

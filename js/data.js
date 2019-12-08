@@ -45,14 +45,6 @@ const skills = [
     title: "Git"
   },
   {
-    img: "https://www.lifewire.com/thmb/zLLj2KX23akNiw1i3ndWRs4KUBc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/WindowsBlueLogo-5774fe3b5f9b58587534ed22.png",
-    title: "Windows"
-  },
-  {
-    img: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
-    title: "macOS"
-  },
-  {
     img: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg",
     title: "Firebase"
   },
@@ -98,6 +90,7 @@ const experience = [
   }
 ]
 
+// Project Info
 const projects = [
   {
     title: "Trivia Me This",
@@ -110,6 +103,15 @@ const projects = [
     logo: "https://media.licdn.com/dms/image/C4D12AQGPoSjQPvz2ZA/article-cover_image-shrink_720_1280/0?e=1580342400&v=beta&t=lgAX1ZhIszsYSOVvulTKpI73EANZFOGy0Jmoq1Auz38",
     date: "January 2019 – May 2019",
     link: "https://www.linkedin.com/pulse/first-year-design-project-disability-friendly-navigation-kevin-chen"
+  }
+]
+
+// Activities Info
+const activities = [
+  {
+    title: "HackNYU Board: Tech Team",
+    desc: "Helped create HackNYU website for registration",
+    logo: "img/hacknyu-logo.png"
   }
 ]
 

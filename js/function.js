@@ -101,7 +101,49 @@
 		});
 	}
 
-	/*--/ Testimonials owl /--*/
+	/*--/ Experience owl /--*/
+	$('#job-cont').owlCarousel({
+		margin: 20,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+
+	/*--/ Project owl /--*/
+	$('#project-cont').owlCarousel({
+		margin: 20,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+
+	/*--/ Activities owl /--*/
+	$('#activities-cont').owlCarousel({
+		margin: 20,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+
+	/*--/ Awards owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
 		autoplay: true,

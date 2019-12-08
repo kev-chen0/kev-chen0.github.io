@@ -3,6 +3,7 @@ const about = document.getElementById("about")
 const expertise = document.getElementById("skill-cont")
 const jobs = document.getElementById("job-cont")
 const projs = document.getElementById("project-cont")
+const activity = document.getElementById("activities-cont")
 const awardCont = document.getElementById("testimonial-mf")
 const summitCont = document.getElementById("summit-cont")
 
@@ -41,137 +42,253 @@ const loadSkills = (list) => {
   })
 }
 
-// Loading experience
+// Loading Experience
 const loadJobs = (list) => {
   list.map(job => {
-		let outer_div = document.createElement("div")
-		let work_div = document.createElement("div")
-		let lightbox = document.createElement("a")
-		let img_div = document.createElement("div")
-		let work_img = document.createElement("img")
-		outer_div.classList = "col-md-4"
-		work_div.classList = "work-box"
-		lightbox.href = job.logo
-		lightbox.setAttribute("data-lightbox", "gallery-mf")
-		img_div.classList = "work-img"
-		work_img.src = job.logo
-		work_img.classList = "img-fluid"
-		work_img.width = "200"
-		work_img.height = "200"
-		img_div.append(work_img)
+    let testimonial_div = document.createElement("div")
+		testimonial_div.classList = "testimonial-box"
+
+		let author_div = document.createElement("div")
+		let award_img = document.createElement("img")
+		let name_span = document.createElement("span")
+		author_div.classList = "author-test"
+		award_img.classList = "b-shadow-a"
+		award_img.src = job.logo
+		award_img.width = "100"
+		award_img.height = "100"
+		name_span.classList = "author"
+		name_span.innerText = job.title
+		author_div.append(award_img)
+		author_div.append(name_span)
 
 		let content_div = document.createElement("div")
-		let row_div = document.createElement("div")
-		let col1_div = document.createElement("div")
-		let title_h = document.createElement("h2")
-		let more_div = document.createElement("div")
-		let skill_span = document.createElement("span")
-		let date_span = document.createElement("span")
-		content_div.classList = "work-content"
-		row_div.classList = "row"
-		col1_div.classList = "col-sm-8"
-		title_h.classList = "w-title"
-		title_h.innerText = job.title
-		more_div.classList = "w-more"
-		skill_span.classList = "w-ctegory"
-		skill_span.innerText = job.site
-		date_span.classList = "w-date"
-		date_span.innerText = job.date
-		more_div.append(skill_span)
-		more_div.append(" / ")
-		more_div.append(date_span)
-		col1_div.append(title_h)
-		col1_div.append(more_div)
+		let description_p = document.createElement("p")
+		let sub_icon_span = document.createElement("span")
+		let i_tag = document.createElement("i")
+		description_p.classList = "description lead"
+		// description_p.innerText = job.desc
 
-		let col2_div = document.createElement("div")
-		let like_div = document.createElement("div")
-		// let button_div = document.createElement("div")
-		let button_span = document.createElement("span")
-		col2_div.classList = "col-sm-4"
-		like_div.classList = "w-like"
-		button_span.classList = "ion-ios-plus-outline"
-		like_div.append(button_span)
-		col2_div.append(like_div)
+    let description_lst = job.desc.split("•")
+    let list = document.createElement("ul")
+    list.classList = "description-box lead"
 
-		row_div.append(col1_div)
-		row_div.append(col2_div)
-		content_div.append(row_div)
+    description_lst.forEach(function(d){
+      let x = document.createElement("li")
+      x.append(d)
+      list.append(x)
+    })
 
-		lightbox.append(img_div)
-		lightbox.append(content_div)
+		sub_icon_span.classList = "comit"
+		i_tag.classList = "fa fa-cogs"
+		sub_icon_span.append(i_tag)
+    content_div.append(list)
+		content_div.append(description_p)
+		content_div.append(sub_icon_span)
 
-		work_div.append(lightbox)
+		testimonial_div.append(author_div)
+		testimonial_div.append(content_div)
 
-		outer_div.append(work_div)
+		jobs.append(testimonial_div)
 
-    jobs.append(outer_div)
+		// let outer_div = document.createElement("div")
+		// let work_div = document.createElement("div")
+		// let lightbox = document.createElement("a")
+		// let img_div = document.createElement("div")
+		// let work_img = document.createElement("img")
+		// outer_div.classList = "col-md-4 fix_center"
+		// work_div.classList = "service-box"
+		// lightbox.href = job.logo
+		// lightbox.setAttribute("data-lightbox", "gallery-mf")
+		// img_div.classList = "work-img"
+		// work_img.src = job.logo
+		// work_img.classList = "img-fluid"
+		// work_img.width = "200"
+		// work_img.height = "200"
+		// img_div.append(work_img)
+    //
+		// let content_div = document.createElement("div")
+		// let row_div = document.createElement("div")
+		// let col1_div = document.createElement("div")
+		// let title_h = document.createElement("h2")
+		// let more_div = document.createElement("div")
+		// let skill_span = document.createElement("span")
+		// let date_span = document.createElement("span")
+		// content_div.classList = "work-content"
+		// row_div.classList = "row"
+		// col1_div.classList = "col-sm-8"
+		// title_h.classList = "w-title"
+		// title_h.innerText = job.title
+		// more_div.classList = "w-more"
+		// skill_span.classList = "w-ctegory"
+		// skill_span.innerText = job.site
+		// date_span.classList = "w-date"
+		// date_span.innerText = job.date
+		// more_div.append(skill_span)
+		// more_div.append(" / ")
+		// more_div.append(date_span)
+		// col1_div.append(title_h)
+		// col1_div.append(more_div)
+    //
+		// let col2_div = document.createElement("div")
+		// let like_div = document.createElement("div")
+		// // let button_div = document.createElement("div")
+		// let button_span = document.createElement("span")
+		// col2_div.classList = "col-sm-4"
+		// like_div.classList = "w-like"
+		// button_span.classList = "ion-ios-plus-outline"
+		// like_div.append(button_span)
+		// col2_div.append(like_div)
+    //
+		// row_div.append(col1_div)
+		// row_div.append(col2_div)
+		// content_div.append(row_div)
+    //
+		// lightbox.append(img_div)
+		// lightbox.append(content_div)
+    //
+		// work_div.append(lightbox)
+    //
+		// outer_div.append(work_div)
+    //
+    // jobs.append(outer_div)
   })
 }
 
-// Loading PROJECTS
+// Loading Projects
 const loadProjects = (list) => {
   list.map(project => {
-		let outer_div = document.createElement("div")
-		let work_div = document.createElement("div")
-		let lightbox = document.createElement("a")
-		let img_div = document.createElement("div")
-		let work_img = document.createElement("img")
-		outer_div.classList = "col-md-4"
-		work_div.classList = "work-box"
-		lightbox.href = project.logo
-		lightbox.setAttribute("data-lightbox", "gallery-mf")
-		img_div.classList = "work-img"
-		work_img.src = project.logo
-		work_img.classList = "img-fluid"
-		work_img.width = "200"
-		work_img.height = "200"
-		img_div.append(work_img)
+    let testimonial_div = document.createElement("div")
+		testimonial_div.classList = "testimonial-box"
+
+		let author_div = document.createElement("div")
+		let award_img = document.createElement("img")
+		let name_span = document.createElement("span")
+		author_div.classList = "author-test"
+		award_img.classList = "b-shadow-a"
+		award_img.src = project.logo
+		award_img.width = "100"
+		award_img.height = "100"
+		name_span.classList = "author"
+		name_span.innerText = project.title
+		author_div.append(award_img)
+		author_div.append(name_span)
 
 		let content_div = document.createElement("div")
-		let row_div = document.createElement("div")
-		let col1_div = document.createElement("div")
-		let title_h = document.createElement("h2")
-		let more_div = document.createElement("div")
-		let skill_span = document.createElement("span")
-		let date_span = document.createElement("span")
-		content_div.classList = "work-content"
-		row_div.classList = "row"
-		col1_div.classList = "col-sm-8"
-		title_h.classList = "w-title"
-		title_h.innerText = project.title
-		more_div.classList = "w-more"
-		skill_span.classList = "w-ctegory"
-		skill_span.innerText = project.link
-		date_span.classList = "w-date"
-		date_span.innerText = project.date
-		more_div.append(skill_span)
-		more_div.append(" / ")
-		more_div.append(date_span)
-		col1_div.append(title_h)
-		col1_div.append(more_div)
+		let description_p = document.createElement("p")
+		let sub_icon_span = document.createElement("span")
+		let i_tag = document.createElement("i")
+		description_p.classList = "description lead"
+		description_p.innerText = project.link
+		sub_icon_span.classList = "comit"
+		i_tag.classList = "fa fa-bolt"
+		sub_icon_span.append(i_tag)
+		content_div.append(description_p)
+		content_div.append(sub_icon_span)
 
-		let col2_div = document.createElement("div")
-		let like_div = document.createElement("div")
-		// let button_div = document.createElement("div")
-		let button_span = document.createElement("span")
-		col2_div.classList = "col-sm-4"
-		like_div.classList = "w-like"
-		button_span.classList = "ion-ios-plus-outline"
-		like_div.append(button_span)
-		col2_div.append(like_div)
+		testimonial_div.append(author_div)
+		testimonial_div.append(content_div)
 
-		row_div.append(col1_div)
-		row_div.append(col2_div)
-		content_div.append(row_div)
+		projs.append(testimonial_div)
 
-		lightbox.append(img_div)
-		lightbox.append(content_div)
+		// let outer_div = document.createElement("div")
+		// let work_div = document.createElement("div")
+		// let lightbox = document.createElement("a")
+		// let img_div = document.createElement("div")
+		// let work_img = document.createElement("img")
+		// outer_div.classList = "col-md-4"
+		// work_div.classList = "service-box"
+		// lightbox.href = project.logo
+		// lightbox.setAttribute("data-lightbox", "gallery-mf")
+		// img_div.classList = "work-img"
+		// work_img.src = project.logo
+		// work_img.classList = "img-fluid"
+		// work_img.width = "200"
+		// work_img.height = "200"
+		// img_div.append(work_img)
+    //
+		// let content_div = document.createElement("div")
+		// let row_div = document.createElement("div")
+		// let col1_div = document.createElement("div")
+		// let title_h = document.createElement("h2")
+		// let more_div = document.createElement("div")
+		// let skill_span = document.createElement("span")
+		// let date_span = document.createElement("span")
+		// content_div.classList = "work-content"
+		// row_div.classList = "row"
+		// col1_div.classList = "col-sm-8"
+		// title_h.classList = "w-title"
+		// title_h.innerText = project.title
+		// more_div.classList = "w-more"
+		// skill_span.classList = "w-ctegory"
+		// skill_span.innerText = project.link
+		// date_span.classList = "w-date"
+		// date_span.innerText = project.date
+		// more_div.append(skill_span)
+		// more_div.append(" / ")
+		// more_div.append(date_span)
+		// col1_div.append(title_h)
+		// col1_div.append(more_div)
+    //
+		// let col2_div = document.createElement("div")
+		// let like_div = document.createElement("div")
+		// // let button_div = document.createElement("div")
+		// let button_span = document.createElement("span")
+		// col2_div.classList = "col-sm-4"
+		// like_div.classList = "w-like"
+		// button_span.classList = "ion-ios-plus-outline"
+		// like_div.append(button_span)
+		// col2_div.append(like_div)
+    //
+		// row_div.append(col1_div)
+		// row_div.append(col2_div)
+		// content_div.append(row_div)
+    //
+		// lightbox.append(img_div)
+		// lightbox.append(content_div)
+    //
+		// work_div.append(lightbox)
+    //
+		// outer_div.append(work_div)
+    //
+    // projs.append(outer_div)
+  })
+}
 
-		work_div.append(lightbox)
+// Loading Activities
+const loadActivities = (list) => {
+  list.map(activities => {
+		let testimonial_div = document.createElement("div")
+		testimonial_div.classList = "testimonial-box"
 
-		outer_div.append(work_div)
+		let author_div = document.createElement("div")
+		let award_img = document.createElement("img")
+		let name_span = document.createElement("span")
+		author_div.classList = "author-test"
+		award_img.classList = "b-shadow-a"
+		award_img.src = activities.logo
+		award_img.width = "100"
+		award_img.height = "100"
+		name_span.classList = "author"
+		name_span.innerText = activities.title
+		author_div.append(award_img)
+		author_div.append(name_span)
 
-    projs.append(outer_div)
+		let content_div = document.createElement("div")
+		let description_p = document.createElement("p")
+		let sub_icon_span = document.createElement("span")
+		let i_tag = document.createElement("i")
+		description_p.classList = "description lead"
+		description_p.innerText = activities.desc
+		sub_icon_span.classList = "comit"
+		i_tag.classList = "fa fa-graduation-cap"
+		sub_icon_span.append(i_tag)
+		content_div.append(description_p)
+		content_div.append(sub_icon_span)
+
+		testimonial_div.append(author_div)
+		testimonial_div.append(content_div)
+
+		activity.append(testimonial_div)
   })
 }
 
@@ -285,6 +402,7 @@ const main = () => {
   loadSkills(skills)
   loadJobs(experience)
   loadProjects(projects)
+  loadActivities(activities)
   loadAwards(awards)
   loadSummits(summits)
 }
