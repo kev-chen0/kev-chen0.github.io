@@ -335,7 +335,7 @@ const loadSummits = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "https://fancyapps.com/fancybox/3/docs/#iframe")
+    a_tag.setAttribute("data-src", "assets/info-template.html")
 
 		let outer_div = document.createElement("div")
 		outer_div.classList = "col-md-4"
