@@ -71,22 +71,15 @@ const loadJobs = (list) => {
 		let sub_icon_span = document.createElement("span")
 		let i_tag = document.createElement("i")
 		description_p.classList = "description lead"
-		// description_p.innerText = job.desc
-
-    let description_lst = job.desc.split("•")
-    let list = document.createElement("ul")
-    list.classList = "description-box lead"
-
-    description_lst.forEach(function(d){
-      let x = document.createElement("li")
-      x.append(d)
-      list.append(x)
-    })
+		description_p.innerText = job.desc
+    let date_p = document.createElement("p")
+    date_p.innerText = job.date
+    date_p.classList = "description lead"
 
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-cogs"
 		sub_icon_span.append(i_tag)
-    content_div.append(list)
+    content_div.append(date_p)
 		content_div.append(description_p)
 		content_div.append(sub_icon_span)
 
@@ -96,68 +89,6 @@ const loadJobs = (list) => {
     a_tag.append(testimonial_div)
 
 		jobs.append(a_tag)
-
-		// let outer_div = document.createElement("div")
-		// let work_div = document.createElement("div")
-		// let lightbox = document.createElement("a")
-		// let img_div = document.createElement("div")
-		// let work_img = document.createElement("img")
-		// outer_div.classList = "col-md-4 fix_center"
-		// work_div.classList = "service-box"
-		// lightbox.href = job.logo
-		// lightbox.setAttribute("data-lightbox", "gallery-mf")
-		// img_div.classList = "work-img"
-		// work_img.src = job.logo
-		// work_img.classList = "img-fluid"
-		// work_img.width = "200"
-		// work_img.height = "200"
-		// img_div.append(work_img)
-    //
-		// let content_div = document.createElement("div")
-		// let row_div = document.createElement("div")
-		// let col1_div = document.createElement("div")
-		// let title_h = document.createElement("h2")
-		// let more_div = document.createElement("div")
-		// let skill_span = document.createElement("span")
-		// let date_span = document.createElement("span")
-		// content_div.classList = "work-content"
-		// row_div.classList = "row"
-		// col1_div.classList = "col-sm-8"
-		// title_h.classList = "w-title"
-		// title_h.innerText = job.title
-		// more_div.classList = "w-more"
-		// skill_span.classList = "w-ctegory"
-		// skill_span.innerText = job.site
-		// date_span.classList = "w-date"
-		// date_span.innerText = job.date
-		// more_div.append(skill_span)
-		// more_div.append(" / ")
-		// more_div.append(date_span)
-		// col1_div.append(title_h)
-		// col1_div.append(more_div)
-    //
-		// let col2_div = document.createElement("div")
-		// let like_div = document.createElement("div")
-		// // let button_div = document.createElement("div")
-		// let button_span = document.createElement("span")
-		// col2_div.classList = "col-sm-4"
-		// like_div.classList = "w-like"
-		// button_span.classList = "ion-ios-plus-outline"
-		// like_div.append(button_span)
-		// col2_div.append(like_div)
-    //
-		// row_div.append(col1_div)
-		// row_div.append(col2_div)
-		// content_div.append(row_div)
-    //
-		// lightbox.append(img_div)
-		// lightbox.append(content_div)
-    //
-		// work_div.append(lightbox)
-    //
-		// outer_div.append(work_div)
-    //
-    // jobs.append(outer_div)
   })
 }
 
@@ -167,7 +98,7 @@ const loadProjects = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "assets/info-template.html")
+    a_tag.setAttribute("data-src", "https://github.com/elaine-zheng/summer2020internships")
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -178,8 +109,8 @@ const loadProjects = (list) => {
 		author_div.classList = "author-test"
 		award_img.classList = "b-shadow-a"
 		award_img.src = project.logo
-		award_img.width = "100"
-		award_img.height = "100"
+		award_img.width = "200"
+		award_img.height = "200"
 		name_span.classList = "author"
 		name_span.innerText = project.title
 		author_div.append(award_img)
@@ -190,10 +121,15 @@ const loadProjects = (list) => {
 		let sub_icon_span = document.createElement("span")
 		let i_tag = document.createElement("i")
 		description_p.classList = "description lead"
-		description_p.innerText = project.link
+		description_p.innerText = project.desc
+    let date_p = document.createElement("p")
+    date_p.innerText = project.date
+    date_p.classList = "description lead"
+
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-bolt"
 		sub_icon_span.append(i_tag)
+    content_div.append(date_p)
 		content_div.append(description_p)
 		content_div.append(sub_icon_span)
 
@@ -203,68 +139,6 @@ const loadProjects = (list) => {
     a_tag.append(testimonial_div)
 
 		projs.append(a_tag)
-
-		// let outer_div = document.createElement("div")
-		// let work_div = document.createElement("div")
-		// let lightbox = document.createElement("a")
-		// let img_div = document.createElement("div")
-		// let work_img = document.createElement("img")
-		// outer_div.classList = "col-md-4"
-		// work_div.classList = "service-box"
-		// lightbox.href = project.logo
-		// lightbox.setAttribute("data-lightbox", "gallery-mf")
-		// img_div.classList = "work-img"
-		// work_img.src = project.logo
-		// work_img.classList = "img-fluid"
-		// work_img.width = "200"
-		// work_img.height = "200"
-		// img_div.append(work_img)
-    //
-		// let content_div = document.createElement("div")
-		// let row_div = document.createElement("div")
-		// let col1_div = document.createElement("div")
-		// let title_h = document.createElement("h2")
-		// let more_div = document.createElement("div")
-		// let skill_span = document.createElement("span")
-		// let date_span = document.createElement("span")
-		// content_div.classList = "work-content"
-		// row_div.classList = "row"
-		// col1_div.classList = "col-sm-8"
-		// title_h.classList = "w-title"
-		// title_h.innerText = project.title
-		// more_div.classList = "w-more"
-		// skill_span.classList = "w-ctegory"
-		// skill_span.innerText = project.link
-		// date_span.classList = "w-date"
-		// date_span.innerText = project.date
-		// more_div.append(skill_span)
-		// more_div.append(" / ")
-		// more_div.append(date_span)
-		// col1_div.append(title_h)
-		// col1_div.append(more_div)
-    //
-		// let col2_div = document.createElement("div")
-		// let like_div = document.createElement("div")
-		// // let button_div = document.createElement("div")
-		// let button_span = document.createElement("span")
-		// col2_div.classList = "col-sm-4"
-		// like_div.classList = "w-like"
-		// button_span.classList = "ion-ios-plus-outline"
-		// like_div.append(button_span)
-		// col2_div.append(like_div)
-    //
-		// row_div.append(col1_div)
-		// row_div.append(col2_div)
-		// content_div.append(row_div)
-    //
-		// lightbox.append(img_div)
-		// lightbox.append(content_div)
-    //
-		// work_div.append(lightbox)
-    //
-		// outer_div.append(work_div)
-    //
-    // projs.append(outer_div)
   })
 }
 
@@ -383,8 +257,14 @@ const loadSummits = (list) => {
 		description_p.innerText = summit.title
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-briefcase"
+
+    let info_p = document.createElement("p")
+    info_p.classList = "description lead"
+		info_p.innerText = summit.desc
+
 		sub_icon_span.append(i_tag)
 		content_div.append(description_p)
+    content_div.append(info_p)
 		content_div.append(sub_icon_span)
 
 		testimonial_div.append(author_div)
@@ -393,79 +273,6 @@ const loadSummits = (list) => {
     a_tag.append(testimonial_div)
 
 		summitCont.append(a_tag)
-
-    // let a_tag = document.createElement("a")
-    // a_tag.setAttribute("data-fancybox", "")
-    // a_tag.setAttribute("data-type", "iframe")
-    // a_tag.setAttribute("data-src", "assets/info-template.html")
-    // // a_tag.setAttribute("onclick", "myFunction('a')")
-    //
-		// let outer_div = document.createElement("div")
-		// outer_div.classList = "col-md-4"
-		// let cardblog_div = document.createElement("div")
-		// cardblog_div.classList = "card card-blog"
-		// let cardimg_div = document.createElement("div")
-		// cardimg_div.classList = "card-img"
-		// let big_img = document.createElement("img")
-		// big_img.classList = "img-fluid"
-		// big_img.src = summit.background
-		// cardimg_div.append(big_img)
-    //
-		// let cardbody_div = document.createElement("div")
-		// cardbody_div.classList = "card-body"
-		// let cardbox_div = document.createElement("div")
-		// cardbox_div.classList = "card-category-box"
-		// let cardcate_div = document.createElement("div")
-		// cardcate_div.classList = "card-category"
-		// let cate_h = document.createElement("h6")
-		// cate_h.classList = "category"
-		// cate_h.innerText = summit.category
-		// cardcate_div.append(cate_h)
-		// cardbox_div.append(cardcate_div)
-    //
-		// let title_h = document.createElement("h3")
-		// title_h.classList = "card-title"
-		// title_h.innerText = summit.title
-		// let desc_p = document.createElement("p")
-		// desc_p.classList = "card-description"
-		// desc_p.innerText = summit.description
-    //
-		// cardbody_div.append(cardbox_div)
-		// cardbody_div.append(title_h)
-		// cardbody_div.append(desc_p)
-    //
-		// let cardfooter_div = document.createElement("div")
-		// cardfooter_div.classList = "card-footer"
-		// let author_div = document.createElement("div")
-		// author_div.classList = "post-author"
-		// let company_img = document.createElement("img")
-		// company_img.src = summit.logo
-		// company_img.classList = "avatar rounded-circle"
-		// let company_span = document.createElement("span")
-		// company_span.classList = "author"
-		// company_span.innerText = " " + summit.company
-		// author_div.append(company_img)
-		// author_div.append(company_span)
-		// let date_div = document.createElement("div")
-		// date_div.classList = "post-date"
-		// let date_span = document.createElement("span")
-		// date_span.classList = "ion-ios-clock-outline"
-		// date_div.append(date_span)
-		// date_div.append(" " + summit.time)
-		// cardfooter_div.append(author_div)
-		// cardfooter_div.append(date_div)
-    //
-		// cardblog_div.append(cardimg_div)
-		// cardblog_div.append(cardbody_div)
-		// cardblog_div.append(cardfooter_div)
-    //
-    // a_tag.append(cardblog_div)
-    //
-		// outer_div.append(a_tag)
-    //
-    // // a_tag.append(outer_div)
-    //
-		// summitCont.append(outer_div)
 	})
 }
 

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 
   $('.testimonial-box').on('click', function(event){
@@ -115,76 +117,86 @@ $(document).ready(function() {
 	/*--/ Experience owl /--*/
 	$('#job-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 2000,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
 			0: {
 				items: 1,
 			},
-		}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
 	/*--/ Project owl /--*/
 	$('#project-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 2000,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
 			0: {
 				items: 1,
 			}
-		}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
-
-	// $('#activities-cont').on('click', '.item', function () {
-  //   alert("click");
-	// 	console.log("hello");
-	// });
 
 	/*--/ Activities owl /--*/
 	$('#activities-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 2000,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
 			0: {
 				items: 1,
 			}
-		}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
 	/*--/ Awards owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 2000,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
 			0: {
 				items: 1,
 			}
-		}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
-	/*--/ Awards owl /--*/
+	/*--/ Summit owl /--*/
 	$('#summit-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 2000,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
 			0: {
 				items: 1,
 			}
-		}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
 })(jQuery);

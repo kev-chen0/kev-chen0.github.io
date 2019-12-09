@@ -88,8 +88,10 @@
 }
 .fix_center {
   margin: 0 auto;
+  display: flex;
+  justify-content: center
 }
-#job-cont .testimonial-box{
+.testimonial-box{
   display: block;
   cursor: pointer;
   padding: 30px 0px;
@@ -101,8 +103,15 @@
   text-align: center;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-#job-cont .testimonial-box:hover{ }
+.testimonial-box:hover{ }
 
+.fancybox-slide--iframe .fancybox-content {
+    width  : 800px;
+    height : 600px;
+    max-width  : 80%;
+    max-height : 80%;
+    margin: 0;
+}
 
 
 body {
