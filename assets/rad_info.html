@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> </head>
+<body onload="myFunction(document.getElementById('text').innerText)">
+
+<label id="text" for="male">word</label>
+
+<script>
+  function myFunction(a) {
+    let category = "Experience";
+    let title = "Project Manager";
+    let subtitle = "NYU EG1003 RAD Project";
+    let description = "• Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud in a team of 3 first-year students<br>• Managed 10-week design project by preparing milestone presentations, weekly reports, and demo video";
+    let link = "https://drive.google.com/drive/folders/1U-yyWOkJXzUdYX6WLRdEcKGQGR0_xiCT?usp=sharing";
+    document.write('<html lang="en"><head><meta charset="utf-8"><title></title><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="" name="keywords"><meta content="" name="description"><link href="../img/bitmoji.png" rel="icon"><link href="../img/apple-touch-icon.png" rel="apple-touch-icon"><link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="../lib/animate/animate.min.css" rel="stylesheet"><link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet"><link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"><link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet"><link href="../css/style.css" rel="stylesheet"></head><body><div class="intro intro-single route bg-image" style="background-image: url(../img/tisch_itp.jpg)"><div class="overlay-mf"></div><div class="intro-content display-table"><div class="table-cell"><div class="container"><h2 class="intro-title mb-4">' + category + '</h2></div></div></div></div></div><section class="blog-wrapper sect-pt4" id="blog"><div class="container"><div class=""><div class="post-box"><div class="post-meta"><h1 class="article-title">' + title + '</h1><ul><li><a target="_blank" href="' + link + '">' + subtitle + '</a></li></ul></div><p>' + description + '</p></div></div></div></div></div></section></body></html>');
+  }
+</script>
+
+</body> </html>

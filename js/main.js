@@ -48,7 +48,7 @@ const loadJobs = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "assets/info-template.html")
+    a_tag.setAttribute("data-src", job.site)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -98,7 +98,8 @@ const loadProjects = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "https://github.com/elaine-zheng/summer2020internships")
+    a_tag.setAttribute("data-target", "_top")
+    a_tag.setAttribute("data-src", project.link)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -148,7 +149,7 @@ const loadActivities = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "assets/info-template.html")
+    a_tag.setAttribute("data-src", activities.site)
     // a_tag.setAttribute("onclick", "myFunction('a')")
 
 		let testimonial_div = document.createElement("div")
@@ -231,7 +232,7 @@ const loadSummits = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", "assets/info-template.html")
+    a_tag.setAttribute("data-src", summit.site)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"

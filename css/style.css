@@ -106,10 +106,10 @@
 .testimonial-box:hover{ }
 
 .fancybox-slide--iframe .fancybox-content {
-    width  : 800px;
-    height : 600px;
-    max-width  : 80%;
-    max-height : 80%;
+    width  : 1000px;
+    height : 700px;
+    max-width  : 90%;
+    max-height : 90%;
     margin: 0;
 }
 
@@ -193,7 +193,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: rgba(0, 120, 255, 0.6);
 }
 
 .overlay-mf {
@@ -748,7 +748,7 @@ a:hover {
 }
 
 .intro-single {
-  height: 350px;
+  height: 200px;
 }
 
 .intro-single .intro-content {
