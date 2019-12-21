@@ -232,7 +232,9 @@ const loadSummits = (list) => {
     let a_tag = document.createElement("a")
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", summit.site)
+    var value1 = "hello";
+    var queryString = "?info=" + value1;
+    a_tag.setAttribute("data-src", summit.site + queryString)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
