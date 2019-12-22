@@ -44,11 +44,15 @@ const loadSkills = (list) => {
 
 // Loading Experience
 const loadJobs = (list) => {
+  var count = 0;
   list.map(job => {
     let a_tag = document.createElement("a")
+    var queryString = "?info=" + "experience" + count;
+
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", job.site)
+    if (job.site != "") a_tag.setAttribute("data-src", job.site)
+    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -89,17 +93,22 @@ const loadJobs = (list) => {
     a_tag.append(testimonial_div)
 
 		jobs.append(a_tag)
+
+    count += 1;
   })
 }
 
 // Loading Projects
 const loadProjects = (list) => {
+  var count = 0;
   list.map(project => {
     let a_tag = document.createElement("a")
+    var queryString = "?info=" + "projects" + count;
+
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-target", "_top")
-    a_tag.setAttribute("data-src", project.link)
+    if (project.link != "") a_tag.setAttribute("data-src", project.link)
+    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -140,17 +149,22 @@ const loadProjects = (list) => {
     a_tag.append(testimonial_div)
 
 		projs.append(a_tag)
+
+    count += 1;
   })
 }
 
 // Loading Activities
 const loadActivities = (list) => {
+  var count = 0;
   list.map(activities => {
     let a_tag = document.createElement("a")
+    var queryString = "?info=" + "activities" + count;
+
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    a_tag.setAttribute("data-src", activities.site)
-    // a_tag.setAttribute("onclick", "myFunction('a')")
+    if (activities.site != "") a_tag.setAttribute("data-src", activities.site)
+    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
 		let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -186,6 +200,8 @@ const loadActivities = (list) => {
     a_tag.append(testimonial_div)
 
 		activity.append(a_tag)
+
+    count += 1;
   })
 }
 
@@ -208,6 +224,10 @@ const loadAwards = (list) => {
 		author_div.append(award_img)
 		author_div.append(name_span)
 
+    let date_p = document.createElement("p")
+    date_p.innerText = award.date
+    date_p.classList = "description lead"
+
 		let content_div = document.createElement("div")
 		let description_p = document.createElement("p")
 		let sub_icon_span = document.createElement("span")
@@ -217,6 +237,7 @@ const loadAwards = (list) => {
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-trophy"
 		sub_icon_span.append(i_tag)
+    content_div.append(date_p)
 		content_div.append(description_p)
 		content_div.append(sub_icon_span)
 
@@ -228,13 +249,15 @@ const loadAwards = (list) => {
 }
 
 const loadSummits = (list) => {
+  var count = 0;
 	list.map(summit => {
     let a_tag = document.createElement("a")
+    var queryString = "?info=" + "i" + count;
+
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
-    var value1 = "hello";
-    var queryString = "?info=" + value1;
-    a_tag.setAttribute("data-src", summit.site + queryString)
+    if (summit.site != "") a_tag.setAttribute("data-src", summit.site)
+    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
     let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
@@ -257,7 +280,7 @@ const loadSummits = (list) => {
 		let sub_icon_span = document.createElement("span")
 		let i_tag = document.createElement("i")
 		description_p.classList = "description lead"
-		description_p.innerText = summit.title
+		description_p.innerText = summit.title + " / " + summit.time
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-briefcase"
 
@@ -276,6 +299,8 @@ const loadSummits = (list) => {
     a_tag.append(testimonial_div)
 
 		summitCont.append(a_tag)
+
+    count += 1;
 	})
 }
 
