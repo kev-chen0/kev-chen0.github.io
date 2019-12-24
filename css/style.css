@@ -119,6 +119,10 @@ body {
   color: #4e4e4e;
 }
 
+h4 {
+  font-weight: 400
+}
+
 h1,
 h2,
 h3,
@@ -193,7 +197,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: rgba(	204, 204, 204, 1);
+  background-color: rgba(	204, 204, 204, 0.5);
 }
 
 .overlay-mf {
@@ -714,6 +718,7 @@ a:hover {
   height: 100vh;
   position: relative;
   color: #fff;
+  font-weight: bold;
 }
 
 .intro .intro-content {

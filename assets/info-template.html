@@ -10,14 +10,20 @@
     let num = parseInt(query.substring(query.length - 1, query.length), 10);
     let obj = eval(section)[num];
 
-    let image = eval(section)[num]['head_image'];
-    let category = eval(section)[num]['category_title'];
+    let header_image = eval(section)[num]['head_image'];
+    let header_title = eval(section)[num]['category_title'];
     let title = eval(section)[num]['real_title'];
     let subtitle = eval(section)[num]['link_name'];
-    let description = eval(section)[num]['long_description'];
     let link = eval(section)[num]['demo_link'];
+    let description_lst = eval(section)[num]['long_description'];
 
-    document.write('<html lang="en"><head><meta charset="utf-8"><title></title><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="" name="keywords"><meta content="" name="description"><link href="../img/bitmoji.png" rel="icon"><link href="../img/apple-touch-icon.png" rel="apple-touch-icon"><link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="../lib/animate/animate.min.css" rel="stylesheet"><link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet"><link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"><link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet"><link href="../css/style.css" rel="stylesheet"></head><body><div class="intro intro-single route bg-image" style="background-image: url(' + image + ')"><div class="overlay-mf"></div><div class="intro-content display-table"><div class="table-cell"><div class="container"><h2 class="intro-title mb-4">' + category + '</h2></div></div></div></div></div><section class="blog-wrapper sect-pt4" id="blog"><div class="container"><div class=""><div class="post-box"><div class="post-meta"><h1 class="article-title">' + title + '</h1><ul><li><a href="' + link + '">' + subtitle + '</a></li></ul></div><p>' + description + '</p></div></div></div></div></div></section></body></html>');
+    let description = "<ul>";
+    for (i = 0; i < description_lst.length; i++) {
+      description += "<li>" + description_lst[i] + "</li>"
+    }
+    description += "</ul>";
+
+    document.write('<html lang="en"><head><meta charset="utf-8"><title></title><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="" name="keywords"><meta content="" name="description"><link href="../img/bitmoji.png" rel="icon"><link href="../img/apple-touch-icon.png" rel="apple-touch-icon"><link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="../lib/animate/animate.min.css" rel="stylesheet"><link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet"><link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"><link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet"><link href="../css/style.css" rel="stylesheet"></head><body><div class="intro intro-single route bg-image" style="background-image: url(' + header_image + ')"><div class="overlay-mf"></div><div class="intro-content display-table"><div class="table-cell"><div class="container"><h2 class="intro-title mb-4">' + header_title + '</h2></div></div></div></div></div><section class="blog-wrapper sect-pt4" id="blog"><div class="container"><div class=""><div class="post-box"><div class="post-meta"><h1 class="article-title">' + title + '</h1><ul><li><a target="_blank" href="' + link + '">' + subtitle + '</a></li></ul></div><p>' + description + '</p></div></div></div></div></div></section></body></html>');
   }
 </script>
 
