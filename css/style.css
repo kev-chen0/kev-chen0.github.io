@@ -106,10 +106,10 @@
 .testimonial-box:hover{ }
 
 .fancybox-slide--iframe .fancybox-content {
-    width  : 850px;
-    height : 700px;
-    max-width  : 90%;
-    max-height : 90%;
+    /* width  : 850px;
+    height : 700px; */
+    max-width  : 60%;
+    max-height : 70%;
     margin: 0;
 }
 
@@ -861,10 +861,11 @@ a:hover {
 .counter-words {
   color: black;
   text-align: center;
+  -webkit-text-stroke: 2px white;
 }
 
 .counter-box {
-  color: black;
+  color: white;
   text-align: center;
 }
 
