@@ -117,8 +117,8 @@ $(document).ready(function() {
 	/*--/ Experience owl /--*/
 	$('#job-cont').owlCarousel({
 		margin: 20,
-		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
@@ -134,8 +134,8 @@ $(document).ready(function() {
 	/*--/ Project owl /--*/
 	$('#project-cont').owlCarousel({
 		margin: 20,
-		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
@@ -151,8 +151,8 @@ $(document).ready(function() {
 	/*--/ Activities owl /--*/
 	$('#activities-cont').owlCarousel({
 		margin: 20,
-		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
@@ -168,8 +168,8 @@ $(document).ready(function() {
 	/*--/ Awards owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
-		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {
@@ -185,8 +185,8 @@ $(document).ready(function() {
 	/*--/ Summit owl /--*/
 	$('#summit-cont').owlCarousel({
 		margin: 20,
-		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		loop: true,
 		responsive: {

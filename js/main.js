@@ -62,7 +62,7 @@ const loadJobs = (list) => {
 		let name_span = document.createElement("span")
 		author_div.classList = "author-test"
 		award_img.classList = "b-shadow-a"
-		award_img.src = job.head_image
+		award_img.src = job.logo
 		award_img.width = "100"
 		award_img.height = "100"
 		name_span.classList = "author"
