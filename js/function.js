@@ -140,23 +140,6 @@ $(document).ready(function() {
     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
-	/*--/ Project owl /--*/
-	$('#project-cont').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		loop: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		},
-    nav    : true,
-    smartSpeed :900,
-    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
-	});
-
 	/*--/ Activities owl /--*/
 	$('#activities-cont').owlCarousel({
 		margin: 20,

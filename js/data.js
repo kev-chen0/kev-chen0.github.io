@@ -143,6 +143,8 @@ const projects = [
     long_description: ["Developed a web application for the Capital One Software Engineering Summit in Winter 2020", "Utilized HTML, CSS, Python/Django, and Javascript to develop a Jeopardy-style web application"],
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
     date: "October 2020",
+
+    categories: "Web"
   },
   {
     head_image: "http://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
@@ -153,7 +155,22 @@ const projects = [
     site: "",
     long_description: ["Developed disability friendly application for those with vision impairments to navigate indepedently", "Implemented Google Cloud with Firebase, AutoVision ML, Storage, Directions API, and Speech Services to develop assistive navigation technology", "<div class='fix_center intro intro-single route'> <iframe width='2000px'; height='1000px'; class='intro intro-single' src='https://www.youtube.com/embed/WR3HkmROxYw'></iframe></div>"],
     short_description: "Developed disability friendly application for those with vision impairments to navigate indepedently",
-    date: "January 2019 – May 2019",
+    date: "January 2019 - May 2019",
+
+    categories: "Python Arduino"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/Artificial-Intelligence-FTC-Robotics-12178/blob/master/robot.jpg?raw=true",
+    category_title: "FTC Robotics",
+    real_title: "Autonomous Robot",
+    link_name: "Robot Code",
+    demo_link: "https://github.com/kev-chen0/Artificial-Intelligence-FTC-Robotics-12178",
+    site: "",
+    long_description: ["The robot functions through remote control activity through Wi-Fi Direct. More importantly, the robot can autonomously function on its own through the camera, with color sensors and pictograph decryption. Additionally, it moves autonomously by placing a cube in the selected column based on the decryption."],
+    short_description: "The robot functions through remote control activity through Wi-Fi Direct. More importantly, the robot can autonomously function on its own through the camera, with color sensors and pictograph decryption. Additionally, it moves autonomously by placing a cube in the selected column based on the decryption.",
+    date: " September 2016 - June 2018",
+
+    categories: "Java OpenCV"
   }
 ]
 

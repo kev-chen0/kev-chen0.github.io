@@ -18,7 +18,7 @@
 
 #portfolio {
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 #portfolio .portfolio-list {
@@ -38,9 +38,10 @@
   line-height: 16px;
   cursor: pointer;
   font-family: 'Poppins';
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -59,7 +60,7 @@
 
 #portfolio .portfolio-container {
   display: inline-block;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   width: 100%;
 }
 
@@ -138,6 +139,17 @@
   line-height: 44px;
 }
 /* Folio */
+
+.text-left {
+  text-align: left;
+}
+
+.imgSize {
+  display: block;
+  width: 200px * 2.42105263158;
+  height:200px;
+  object-fit: cover;
+}
 
 .main-contact {
   padding: 1em;
