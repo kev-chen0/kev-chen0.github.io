@@ -215,8 +215,29 @@
                     Recent Developments
                   </h5>
                 </div>
-                <div>
-                  <li> Attended </li>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="counter-box counter-box pt-4 pt-md-0">
+                      <div class="counter-ico">
+                        <span class="ico-circle"><i class="fas fa-laptop-code"></i></span>
+                      </div>
+                      <div>
+                        <h4>Capital One Software Engineering Summit</h4>
+                        <h6>January 2020</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="counter-box pt-4 pt-md-0">
+                      <div class="counter-ico">
+                        <span class="ico-circle"><i class="fas fa-user-graduate"></i></span>
+                      </div>
+                      <div>
+                        <h4>CodePath iOS Bootcamp</h4>
+                        <h6>June 2019</h6>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,7 +248,7 @@
   <!-- Overview End -->
 
   <!--/ Section Skills Star /-->
-  <section id="service" class="services-mf route" style="padding-top: 70px">
+  <section id="service" class="services-mf route" style="padding-top: 70px; padding-bottom: 50px">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -248,7 +269,7 @@
             </div>
         </div>
       </div>
-  </div>
+    </div>
   </section>
   <!--/ Section Skills End /-->
 
@@ -287,11 +308,85 @@
           <p class="subtitle-a"> </p>
           <div class="line-mf"></div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
 
             <div id="project-cont" class="owl-carousel owl-theme">
 
+            </div>
+
+            <div id="portfolio" class="text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="portfolio-list">
+                      <ul class="nav list-unstyled" id="portfolio-flters">
+                        <li class="filter filter-active" data-filter=".all">all</li>
+                        <li class="filter" data-filter=".branding">branding</li>
+                        <li class="filter" data-filter=".mockups">mockups</li>
+                        <li class="filter" data-filter=".uikits">ui kits</li>
+                        <li class="filter" data-filter=".webdesign">web design</li>
+                        <li class="filter" data-filter=".photography">photography</li>
+                      </ul>
+                    </div>
+
+                    <div class="portfolio-container">
+
+                      <div class="col-lg-4 col-md-6 portfolio-thumbnail mockups">
+
+                        <div class="work-box">
+                          <a data-fancybox data-type="iframe" data-src="assets/info-template.html?info=projects0">
+
+                            <div class="work-img">
+                              <img src="images/avatar.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="work-content">
+                              <div class="row">
+                                <div class="col-sm-8">
+                                  <h2 class="w-title">Lorem impsum dolor</h2>
+                                  <div class="w-more">
+                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="w-like">
+                                    <span class="ion-ios-plus-outline"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </a>
+                        </div>
+
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+                        <a class="popup-img" href="images/portfolio/3.jpg">
+                          <img src="images/portfolio/3.jpg" alt="img">
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+                        <a class="popup-img" href="images/portfolio/4.jpg">
+                          <img src="images/portfolio/4.jpg" alt="img">
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+                        <a class="popup-img" href="images/portfolio/5.jpg">
+                          <img src="images/portfolio/5.jpg" alt="img">
+                        </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+                        <a class="popup-img" href="images/portfolio/6.jpg">
+                          <img src="images/portfolio/6.jpg" alt="img">
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -411,7 +506,7 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/fancybox/dist/jquery.fancybox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
-
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/data.js"></script>

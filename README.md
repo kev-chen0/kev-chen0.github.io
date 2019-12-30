@@ -2,7 +2,7 @@
 
 ## Personal Website
 
-<img src="https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/Screen%20Shot%202019-11-29%20at%201.45.20%20PM.png?alt=media&token=fca9adbe-2a22-4e29-938b-105eedcf2679" width=1000>
+<img src="https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/main.png?alt=media&token=76cfb38b-3206-4bb8-824e-63952355b7d0" width=1000>
 
 ### Features
 
