@@ -114,6 +114,16 @@ $(document).ready(function() {
 		});
 	}
 
+  $('.services-carousel').owlCarousel({
+      autoplay: false,
+      loop: true,
+      margin: 20,
+      nav: true,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
+
 	/*--/ Experience owl /--*/
 	$('#job-cont').owlCarousel({
 		margin: 20,

@@ -15,7 +15,7 @@ const loadSkills = (list) => {
 		let circle_div = document.createElement("div")
 		let circle_span = document.createElement("span")
 		let circle_img = document.createElement("img")
-		outer_div.classList = "col-md-4"
+		outer_div.classList = "services-block"
 		service_div.classList = "service-box"
 		circle_div.classList = "service-ico"
 		// circle_span.classList = "ico-circle"

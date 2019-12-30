@@ -98,15 +98,16 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#awards">Awards</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll" data-fancybox data-type="iframe" data-src="assets/resume.html">Resume</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll" data-fancybox data-type="iframe" data-src="assets/contact.html">Contact</a>
             <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -202,46 +203,27 @@
   <!-- About End -->
 
   <!-- Overview Start -->
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/jay_street2.jpg?alt=media&token=2542fa1c-b764-4dba-b052-ee5265688209)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-4">
-          <div class="counter-box counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num counter-words">
-              <p class="counter">4</p>
-              <span class="counter-text">PROGRAMMING LANGUAGES</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-4">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num counter-words">
-              <p class="counter">15</p>
-              <span class="counter-text">COMPLETED PROJECTS</span>
+  <section id="overview">
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/jay_street2.jpg?alt=media&token=2542fa1c-b764-4dba-b052-ee5265688209)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Recent Developments
+                  </h5>
+                </div>
+                <div>
+                  <li> Attended </li>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-3 col-lg-4">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num counter-words">
-              <p class="counter">4</p>
-              <span class="counter-text">HACKATHON WINS</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Overview End -->
 
   <!--/ Section Skills Star /-->
@@ -258,11 +240,15 @@
           </div>
         </div>
       </div>
+      <div id="skill">
+        <div class="container">
 
-      <div class="row" id="skill-cont">
+            <div id="skill-cont" class="services-carousel owl-carousel owl-theme">
 
+            </div>
+        </div>
       </div>
-    </div>
+  </div>
   </section>
   <!--/ Section Skills End /-->
 
@@ -387,54 +373,27 @@
   <!--/ Section Conferences/Summits End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/stern.jpg?alt=media&token=6bfb0c23-0b1c-4c67-9b30-9968ae551208)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
+  <footer id="wrapper" class="divided">
+    <div class="container" style="padding: 4rem 4rem 2rem 4rem;">
+      <div class="row" >
         <div class="col-sm-12">
-          <div class="contact-mf">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Contact
-                    </h5>
-                  </div>
-                  <div class="main-contact">
-                    <i class="fas fa-paper-plane" style="display: flex; justify-content: center; padding-bottom: 20px"></i>
-            				<div style="display: flex; justify-content: center;">
-            					<h4><a href = "mailto: kevinchen@nyu.edu">kevinchen[at]nyu[dot]edu</a></h4>
-            				</div>
-            			</div>
-                </div>
-              </div>
-            </div>
+          <div class="socials" style="margin: 0 0 2rem 0; padding-left: 1rem;">
+            <ul>
+              <li><a target="_blank" href="https://github.com/kevin-chen"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/kevin-chen0"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+              <li><a href = "mailto: kevinchen@nyu.edu"><span class="ico-circle"><i class="fas fa-envelope"></i></span></a></li>
+            </ul>
+          </div>
+          <div class="credits" >
+            <p class="copyright">&copy; 2019 <strong>Kevin Chen</strong> | v2.3 | <a class="previous" href="http://v1.kev-chen.me/">Previous Version</a></p>
+          </div>
+          <div class="credits">
+            Designed by <a target="_blank" href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="socials">
-              <ul>
-                <li><a target="_blank" href="https://github.com/kevin-chen"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/kevin-chen0"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-              </ul>
-            </div>
-            <div class="credits">
-              <p class="copyright">&copy; 2019 <strong>Kevin Chen</strong> | v2.3 | <a class="previous" href="http://v1.kev-chen.me/">Previous Version</a></p>
-            </div>
-            <div class="credits">
-              Designed by <a target="_blank" href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
+  </footer>
   <!--/ Section Contact-footer End /-->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
