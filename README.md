@@ -7,9 +7,9 @@
 ### Features
 
 - [X] Google Analytics
-- [X] typed.js
+- [X] typed.js, Owl Carousel
 - [X] Custom Domain
-- [X] Firebase for image storage
+- [X] Firebase
 
 ### Resources:
 
