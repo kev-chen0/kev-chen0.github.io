@@ -2,63 +2,78 @@
 const skills = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
-    title: "Python"
+    title: "Python",
+    subtitle: "Experienced with Python utilized in multiple projects implementing APIs, OpenCV, Django, and Multi-Threading"
   },
   {
     img: "https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png",
-    title: "Django"
+    title: "Django",
+    subtitle: "Utilized Django and Flask for web applications such as trivia and to-do list"
   },
   {
     img: "https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
-    title: "HTML/CSS"
+    title: "HTML/CSS",
+    subtitle: "Familiar with HTML & CSS to develop personal website and web applications"
   },
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
-    title: "C++"
+    title: "C++",
+    subtitle: "Used C++ with data structures and algorithms"
   },
   {
     img: "https://www.softexia.com/wp-content/uploads/2017/04/Java-logo.png",
-    title: "Java"
+    title: "Java",
+    subtitle: "Utilized Java in developing games such as mock Plants vs. Zombies"
   },
   {
     img: "https://apprendre-a-coder.com/wp/wp-content/uploads/2019/01/swift.png",
-    title: "Swift"
+    title: "Swift",
+    subtitle: "Experienced with Swift in developing iOS applications for personal projects and bootcamp course"
   },
   {
     img: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/super_cloud.png",
-    title: "Google Cloud"
+    title: "Google Cloud",
+    subtitle: "Experienced with Google Cloud services such as App Engine, Firebase, AutoVision ML, Storage, Maps API, and Speech Services"
   },
   {
     img: "https://www.londonappbrewery.com/wp-content/uploads/2015/09/xcode-development-icon.png",
-    title: "iOS App Development"
+    title: "iOS App Development",
+    subtitle: "Experienced with iOS services such as Apple Speech Recognition and CoreML"
   },
   {
     img: "https://pluspng.com/img-png/raspberry-pi-png-raspberry-pi-2-model-b-1560.png",
-    title: "Raspberry Pi"
+    title: "Raspberry Pi",
+    subtitle: "Utilized Raspberry Pi for projects such as a disability friendly application for those with vision impairments to navigate indepedently"
   },
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/7/71/Arduino-uno-perspective-transparent.png",
-    title: "Arduino"
+    title: "Arduino",
+    subtitle: "Experienced with Arduino to create projects such as RC Car, Robot Arm, and Light Saber"
   },
   {
     img: "https://i2.wp.com/boffosocko.com/wp-content/uploads/2014/09/Git_icon.svg_.png?fit=1024%2C1024&ssl=1",
-    title: "Git"
+    title: "Git",
+    subtitle: "Familiar with Git techniques such as committing, merging, pull requests"
   },
   {
     img: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg",
-    title: "Firebase"
+    title: "Firebase",
+    subtitle: "Utilized services such as Real-Time Database, Storage, and Authentication to develop IoT projects"
   },
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
-    title: "AWS"
+    title: "AWS",
+    subtitle: "Familiar with services such as IoT MQTT and Alexa"
   },
   {
     img: "https://www.linuxjournal.com/sites/default/files/styles/360_250/public/nodeimage/story/bash-icon_0.png?itok=JZG6p4sq",
-    title: "Bash"
+    title: "Bash",
+    subtitle: "Experienced with Linux command line functions"
   },
   {
     img: "https://www.mon-code.net/logo/rabbitmq.png",
-    title: "MQTT"
+    title: "MQTT",
+    subtitle: "Experienced with MQTT networking protocol and RabbitMQ for IoT projects"
   }
 ]
 
@@ -153,11 +168,11 @@ const projects = [
     link_name: "MakerSpace Article",
     demo_link: "http://makerspace.engineering.nyu.edu/designlab/personal-navigator/",
     site: "",
-    long_description: ["Developed disability friendly application for those with vision impairments to navigate indepedently", "Implemented Google Cloud with Firebase, AutoVision ML, Storage, Directions API, and Speech Services to develop assistive navigation technology", "<div class='fix_center intro intro-single route'> <iframe width='2000px'; height='1000px'; class='intro intro-single' src='https://www.youtube.com/embed/WR3HkmROxYw'></iframe></div>"],
+    long_description: ["Developed disability friendly application for those with vision impairments to navigate indepedently", "Implemented Google Cloud with Firebase, AutoVision ML, Storage, Directions API, and Speech Services to develop assistive navigation technology", "<div class='fix_center intro intro-single route'><iframe width='420' height='100%' class='intro intro-single' src='https://www.youtube.com/embed/WR3HkmROxYw'></iframe></div>"],
     short_description: "Developed disability friendly application for those with vision impairments to navigate indepedently",
     date: "January 2019 - May 2019",
 
-    categories: "Python Arduino"
+    categories: "Python Arduino iOS"
   },
   {
     head_image: "https://github.com/kevin-chen/Artificial-Intelligence-FTC-Robotics-12178/blob/master/robot.jpg?raw=true",
@@ -168,10 +183,101 @@ const projects = [
     site: "",
     long_description: ["The robot functions through remote control activity through Wi-Fi Direct. More importantly, the robot can autonomously function on its own through the camera, with color sensors and pictograph decryption. Additionally, it moves autonomously by placing a cube in the selected column based on the decryption."],
     short_description: "The robot functions through remote control activity through Wi-Fi Direct. More importantly, the robot can autonomously function on its own through the camera, with color sensors and pictograph decryption. Additionally, it moves autonomously by placing a cube in the selected column based on the decryption.",
-    date: " September 2016 - June 2018",
+    date: "September 2016 - June 2018",
 
     categories: "Java OpenCV"
-  }
+  },
+  {
+    head_image: "https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png",
+    category_title: "Parstagram",
+    real_title: "iOS Bootcamp",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kevin-chen/Parstagram",
+    site: "",
+    long_description: ["This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!"],
+    short_description: "This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!",
+    date: "March 2019",
+
+    categories: "iOS"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/Arduino-Bluetooth-Car/blob/master/IMG_5796.jpg?raw=true",
+    category_title: "Bluetooth RC Car",
+    real_title: "Bluetooth/3D Printed RC Car",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kevin-chen/Arduino-Bluetooth-Car",
+    site: "",
+    long_description: ["Bluetooth controlled car built with popsicle sticks and controlled by an app", "Utilized motors, LEDs, and distance sensors to autonomously maneuver; designed using 3D designed parts"],
+    short_description: "Bluetooth controlled car built with popsicle sticks and controlled by an app",
+    date: "February 2018 – May 2018",
+
+    categories: "Arduino"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/Plants-Vs.-Zombies/blob/master/gamePlay.png?raw=true",
+    category_title: "Plants Vs. Zombies Game",
+    real_title: "Plants Vs. Zombies Game",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kev-chen0/Plants-Vs.-Zombies",
+    site: "",
+    long_description: ["Side-scrolling game. Defend the base from zombies coming from the right. Players strategically place objects to help defend the base. Full game w/ start, help, game, and end screens"],
+    short_description: "Side-scrolling game. Defend the base from zombies coming from the right. Players strategically place objects to help defend the base. Full game w/ start, help, game, and end screens",
+    date: "April 2017 – June 2017",
+
+    categories: "Java"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/Tic-Tac-Toe/blob/master/tic-tac-toe.gif?raw=true",
+    category_title: "Tic-Tac-Toe",
+    real_title: "Tic-Tac-Toe",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kevin-chen/Tic-Tac-Toe",
+    site: "",
+    long_description: ["Final Project (Intro to Python) using Python's Turtle and Tkinter modules", "Developed challenging AI to play against, scoreboards, and UI"],
+    short_description: "Final Project (Intro to Python) using Python's Turtle and Tkinter modules",
+    date: "November 2018 - December 2018",
+
+    categories: "Python"
+  },
+  {
+    head_image: "https://raw.githubusercontent.com/kevin-chen/v1/master/assets/tag.png?token=AKG5RNXNZQTEO7DBBTGGAZC6COKYQ",
+    category_title: "Tangible Activities for Geometry",
+    real_title: "Tangible Activities for Geometry",
+    link_name: "NYU Article",
+    demo_link: "https://www.nyu.edu/about/news-publications/news/2016/june/grade-school-students-teach-a-robot-to-help-themselves-learn-geometry.html",
+    site: "",
+    long_description: ["Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture in NYU Holodeck Project"],
+    short_description: "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture in NYU Holodeck Project",
+    date: "May 2019 – August 2019",
+
+    categories: "Python iOS"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/tech-stack/blob/master/distance-opencv/Lip.jpg?raw=true",
+    category_title: "Automated Mouth Moment",
+    real_title: "Automated Mouth Moment",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kevin-chen/Lip-Detection-OpenCV",
+    site: "",
+    long_description: ["Utilized OpenCV to measure distance between upper and lower lips", "Programmed Arduino using servos to mimic mouth movement"],
+    short_description: "Utilized OpenCV to measure distance between upper and lower lips",
+    date: "September 2019 - December 2019",
+
+    categories: "Python OpenCV"
+  },
+  {
+    head_image: "https://github.com/kevin-chen/Pong-iOS-App/blob/master/pong.gif?raw=true",
+    category_title: "Ping Pong",
+    real_title: "Automated Mouth Moment",
+    link_name: "GitHub",
+    demo_link: "https://github.com/kev-chen0/Pong-iOS-App",
+    site: "",
+    long_description: ["Ping Pong Game on iOS App, Features: 2-Player and Computer", "Proof of concept  iOS game with the addition of user screens and background music"],
+    short_description: "Ping Pong Game on iOS App, Features: 2-Player and Computer",
+    date: "December 2018",
+
+    categories: "iOS"
+  },
 ]
 
 // Activities Info

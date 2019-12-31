@@ -34,6 +34,11 @@ const loadSkills = (list) => {
 		title_h.innerText = skill.title
 		content_div.append(title_h)
 
+    let subtitle_h = document.createElement("p")
+    // subtitle_h.classList = "service-content"
+    subtitle_h.innerText = skill.subtitle
+    content_div.append(subtitle_h)
+
 		service_div.append(circle_div)
 		service_div.append(content_div)
 		outer_div.append(service_div)
@@ -332,7 +337,7 @@ const loadSummits = (list) => {
 // Main Call
 const main = () => {
   loadSkills(skills)
-  // loadJobs(experience)
+  loadJobs(experience)
   loadProjects(projects)
   loadActivities(activities)
   loadAwards(awards)

@@ -114,7 +114,9 @@ $(document).ready(function() {
 
   // Skills
   $('.services-carousel').owlCarousel({
-      autoplay: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+  		autoplayHoverPause: true,
       loop: true,
       margin: 20,
       nav: true,
