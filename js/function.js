@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   $('.testimonial-box').on('click', function(event){
@@ -114,6 +112,19 @@ $(document).ready(function() {
 		});
 	}
 
+  // Skills
+  $('.services-carousel').owlCarousel({
+      autoplay: true,
+      autoplayTimeout: 2000,
+  		autoplayHoverPause: true,
+      loop: true,
+      margin: 20,
+      nav: true,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
+
 	/*--/ Experience owl /--*/
 	$('#job-cont').owlCarousel({
 		margin: 20,
@@ -125,23 +136,6 @@ $(document).ready(function() {
 			0: {
 				items: 1,
 			},
-		},
-    nav    : true,
-    smartSpeed :900,
-    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
-	});
-
-	/*--/ Project owl /--*/
-	$('#project-cont').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		loop: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
 		},
     nav    : true,
     smartSpeed :900,
@@ -185,10 +179,10 @@ $(document).ready(function() {
 	/*--/ Summit owl /--*/
 	$('#summit-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
-		loop: true,
+		loop: false,
 		responsive: {
 			0: {
 				items: 1,
@@ -200,3 +194,46 @@ $(document).ready(function() {
 	});
 
 })(jQuery);
+
+// ========================================================================= //
+//  Porfolio isotope and filter
+// ========================================================================= //
+$(window).load(function(){
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-thumbnail',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfolio-flters li').on('click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+})
+
+var OpenTab;
+
+function showTab(num) {
+  try{
+      if(OpenTab!=undefined){
+        var OldTabID = document.getElementById('tab'+OpenTab);
+        var OldPanelID = document.getElementById('panel'+OpenTab);
+        OldTabID.className = '';
+        OldPanelID.className = 'hide';
+        OldTabID.setAttribute('aria-selected', false);
+        OldPanelID.setAttribute('aria-hidden', true);
+      }
+      var TabID = document.getElementById('tab'+num);
+      var PanelID = document.getElementById('panel'+num);
+      TabID.className = 'selected';
+      PanelID.className = 'selected';
+      TabID.setAttribute('aria-selected', true);
+      PanelID.setAttribute('aria-hidden', false);
+      OpenTab = num;
+  }catch(e){}
+}
+
+showTab(1);

@@ -1,7 +1,8 @@
 // Element variables
 const about = document.getElementById("about")
 const expertise = document.getElementById("skill-cont")
-const jobs = document.getElementById("job-cont")
+const jobsTab = document.getElementById("v-pills-tab")
+const jobsContent = document.getElementById("v-pills-tabContent")
 const projs = document.getElementById("project-cont")
 const activity = document.getElementById("activities-cont")
 const awardCont = document.getElementById("testimonial-mf")
@@ -15,7 +16,7 @@ const loadSkills = (list) => {
 		let circle_div = document.createElement("div")
 		let circle_span = document.createElement("span")
 		let circle_img = document.createElement("img")
-		outer_div.classList = "col-md-4"
+		outer_div.classList = "services-block"
 		service_div.classList = "service-box"
 		circle_div.classList = "service-ico"
 		// circle_span.classList = "ico-circle"
@@ -34,6 +35,11 @@ const loadSkills = (list) => {
 		title_h.innerText = skill.title
 		content_div.append(title_h)
 
+    let subtitle_h = document.createElement("p")
+    // subtitle_h.classList = "service-content"
+    subtitle_h.innerText = skill.subtitle
+    content_div.append(subtitle_h)
+
 		service_div.append(circle_div)
 		service_div.append(content_div)
 		outer_div.append(service_div)
@@ -46,53 +52,72 @@ const loadSkills = (list) => {
 const loadJobs = (list) => {
   var count = 0;
   list.map(job => {
+    // Tabs
     let a_tag = document.createElement("a")
-    var queryString = "?info=" + "experience" + count;
+    if (count == 0) a_tag.classList = "nav-link active"
+    else a_tag.classList = "nav-link"
+    a_tag.id = "v-pills-" + job.tab_name + "-tab"
+    a_tag.setAttribute("data-toggle", "pill")
+    a_tag.setAttribute("href", "#v-pills-" + job.tab_name)
+    a_tag.setAttribute("role", "tab")
+    a_tag.setAttribute("aria-controls", "v-pills-" + job.tab_name)
+    if (count == 0) a_tag.setAttribute("aria-selected", "true")
+    else a_tag.setAttribute("aria-selected", "false")
+    a_tag.innerText = job.real_title
+		jobsTab.append(a_tag)
 
-    a_tag.setAttribute("data-fancybox", "")
-    a_tag.setAttribute("data-type", "iframe")
-    if (job.site != "") a_tag.setAttribute("data-src", job.site)
-    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
+    //Content
+    let outer_div = document.createElement("div")
+    if (count == 0) outer_div.classList = "tab-pane fade show active"
+    else outer_div.classList = "tab-pane fade"
+    outer_div.id = "v-pills-" + job.tab_name
+    outer_div.setAttribute("role", "tabpanel")
+    outer_div.setAttribute("aria-labelledby", "v-pills-" + job.tab_name + "-tab")
 
-    let testimonial_div = document.createElement("div")
-		testimonial_div.classList = "testimonial-box"
+    let sec = document.createElement("section")
+    sec.classList = "blog-wrapper"
+    sec.id = "blog"
 
-		let author_div = document.createElement("div")
-		let award_img = document.createElement("img")
-		let name_span = document.createElement("span")
-		author_div.classList = "author-test"
-		award_img.classList = "b-shadow-a"
-		award_img.src = job.logo
-		award_img.width = "100"
-		award_img.height = "100"
-		name_span.classList = "author"
-		name_span.innerText = job.category_title
-		author_div.append(award_img)
-		author_div.append(name_span)
+    let contain_div = document.createElement("div")
+    contain_div.classList = "container"
 
-		let content_div = document.createElement("div")
-		let description_p = document.createElement("p")
-		let sub_icon_span = document.createElement("span")
-		let i_tag = document.createElement("i")
-		description_p.classList = "description lead"
-		description_p.innerText = job.short_description
-    let date_p = document.createElement("p")
-    date_p.innerText = job.date
-    date_p.classList = "description lead"
+    let post_div = document.createElement("div")
+    post_div.classList = "post-meta"
 
-		sub_icon_span.classList = "comit"
-		i_tag.classList = "fa fa-cogs"
-		sub_icon_span.append(i_tag)
-    content_div.append(date_p)
-		content_div.append(description_p)
-		content_div.append(sub_icon_span)
+    let h_tag = document.createElement("h1")
+    h_tag.classList = "article-title"
+    h_tag.innerText = job.category_title
 
-		testimonial_div.append(author_div)
-		testimonial_div.append(content_div)
+    let img = document.createElement("img")
+    img.src = job.logo
+    img.classList = "iconSize"
 
-    a_tag.append(testimonial_div)
+    let date = document.createElement("ul")
+    let dateli = document.createElement("li")
+    let datea = document.createElement("a")
+    datea.innerText = job.date
+    dateli.append(datea)
+    date.append(dateli)
 
-		jobs.append(a_tag)
+    post_div.append(h_tag)
+    post_div.append(img)
+    post_div.append(date)
+
+    let description = document.createElement("ul")
+    for (i = 0; i < job.long_description.length; i++) {
+      let li_elem = document.createElement("li")
+      li_elem.append(job.long_description[i])
+      description.append(li_elem)
+    }
+
+    contain_div.append(post_div)
+    contain_div.append(description)
+
+    sec.append(contain_div)
+
+    outer_div.append(sec)
+
+    jobsContent.append(outer_div)
 
     count += 1;
   })
@@ -102,6 +127,13 @@ const loadJobs = (list) => {
 const loadProjects = (list) => {
   var count = 0;
   list.map(project => {
+    // Images: 31.28W X 23.46H
+    let firstDiv = document.createElement("div")
+    firstDiv.classList = "col-lg-4 col-md-6 portfolio-thumbnail all " + project.categories
+
+    let workDiv = document.createElement("div")
+    workDiv.classList = "work-box"
+
     let a_tag = document.createElement("a")
     var queryString = "?info=" + "projects" + count;
 
@@ -110,45 +142,63 @@ const loadProjects = (list) => {
     if (project.site != "") a_tag.setAttribute("data-src", project.link)
     else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
-    let testimonial_div = document.createElement("div")
-		testimonial_div.classList = "testimonial-box"
+    let imgDiv = document.createElement("div")
+    imgDiv.classList = "work-img"
+    let img = document.createElement("img")
+    img.src = project.head_image
+    img.classList = "img-fluid imgSize"
+    imgDiv.append(img)
 
-		let author_div = document.createElement("div")
-		let award_img = document.createElement("img")
-		let name_span = document.createElement("span")
-		author_div.classList = "author-test"
-		award_img.classList = "b-shadow-a"
-		award_img.src = project.head_image
-		award_img.width = "200"
-		award_img.height = "200"
-		name_span.classList = "author"
-		name_span.innerText = project.category_title
-		author_div.append(award_img)
-		author_div.append(name_span)
+    let contentDiv = document.createElement("div")
+    contentDiv.classList = "work-content"
 
-		let content_div = document.createElement("div")
-		let description_p = document.createElement("p")
-		let sub_icon_span = document.createElement("span")
-		let i_tag = document.createElement("i")
-		description_p.classList = "description lead"
-		description_p.innerText = project.short_description
-    let date_p = document.createElement("p")
-    date_p.innerText = project.date
-    date_p.classList = "description lead"
+    let rowDiv = document.createElement("div")
+    rowDiv.classList = "row"
 
-		sub_icon_span.classList = "comit"
-		i_tag.classList = "fa fa-bolt"
-		sub_icon_span.append(i_tag)
-    content_div.append(date_p)
-		content_div.append(description_p)
-		content_div.append(sub_icon_span)
+    let colDiv = document.createElement("div")
+    colDiv.classList = "col-sm-10 text-left"
+    let hTag = document.createElement("h2")
+    hTag.classList = "w-title"
+    hTag.innerText = project.category_title
 
-		testimonial_div.append(author_div)
-		testimonial_div.append(content_div)
+    let moreDiv = document.createElement("div")
+    moreDiv.classList = "w-more"
+    let cSpan = document.createElement("span")
+    cSpan.classList = "w-ctegory"
+    cSpan.innerText = project.categories
+    let dateSpan = document.createElement("span")
+    dateSpan.classList = "w-date"
+    dateSpan.innerText = project.date
+    moreDiv.append(cSpan)
+    moreDiv.append(" / ")
+    moreDiv.append(dateSpan)
+    // moreDiv.innerText = cSpan + "/" + dateSpan
 
-    a_tag.append(testimonial_div)
+    colDiv.append(hTag)
+    colDiv.append(moreDiv)
 
-		projs.append(a_tag)
+    let col2Div = document.createElement("div")
+    col2Div.classList = "col-sm-2"
+    let wDiv = document.createElement("div")
+    wDiv.classList = "w-like"
+    let iconSpan = document.createElement("span")
+    iconSpan.classList = "ion-ios-plus-outline"
+    wDiv.append(iconSpan)
+    col2Div.append(wDiv)
+
+    rowDiv.append(colDiv)
+    rowDiv.append(col2Div)
+
+    contentDiv.append(rowDiv)
+
+    a_tag.append(imgDiv)
+    a_tag.append(contentDiv)
+
+    workDiv.append(a_tag)
+
+    firstDiv.append(workDiv)
+
+    projs.append(firstDiv)
 
     count += 1;
   })
@@ -174,11 +224,11 @@ const loadActivities = (list) => {
 		let name_span = document.createElement("span")
 		author_div.classList = "author-test"
 		award_img.classList = "b-shadow-a"
-		award_img.src = activities.logo
+		award_img.src = activities.head_image
 		award_img.width = "100"
 		award_img.height = "100"
 		name_span.classList = "author"
-		name_span.innerText = activities.title
+		name_span.innerText = activities.category_title
 		author_div.append(award_img)
 		author_div.append(name_span)
 
@@ -187,7 +237,7 @@ const loadActivities = (list) => {
 		let sub_icon_span = document.createElement("span")
 		let i_tag = document.createElement("i")
 		description_p.classList = "description lead"
-		description_p.innerText = activities.desc
+		description_p.innerText = activities.short_description
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-graduation-cap"
 		sub_icon_span.append(i_tag)
