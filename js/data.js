@@ -298,7 +298,7 @@ const activities = [
     real_title: "",
     link_name: "HackNYU Website",
     demo_link: "https://hacknyu.org/",
-    site: "",
+    site: "https://hacknyu.org/",
     long_description: ["Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning"],
     short_description: "Worked in a team of other NYU students to create a website for registration for HackNYU 2020 Hackathon",
     date: "October 2019 - Present",
