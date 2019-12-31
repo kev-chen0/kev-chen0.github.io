@@ -337,7 +337,7 @@ const loadSummits = (list) => {
 // Main Call
 const main = () => {
   loadSkills(skills)
-  loadJobs(experience)
+  // loadJobs(experience)
   loadProjects(projects)
   loadActivities(activities)
   loadAwards(awards)

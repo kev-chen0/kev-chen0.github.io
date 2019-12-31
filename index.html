@@ -36,7 +36,7 @@
 	<meta property="og:author" content="Kevin Chen"/>
   <meta property="og:url" content="https://kev-chen.me" />
 
-  <!-- Favicons -->
+  <!-- Icon -->
   <link href="https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/bitmoji.png?alt=media&token=6f077655-4b4f-4a66-b668-279e7e708d2d" rel="icon">
 
   <!-- Bootstrap CSS File -->
@@ -171,7 +171,7 @@
                       <ul>
                         <li>Bachelor of Science, Computer Science</li>
                         <li>Minor: Cyber Security, Business Studies</li>
-                        <li>Expected Graduation: May 2022</li>
+                        <li>Expected Graduation: December 2021</li>
                         <li>GPA: 3.5</li>
                         <li>Relevant Coursework:
                           <ul>
@@ -251,7 +251,7 @@
   <!-- Overview End -->
 
   <!--/ Section Skills Star /-->
-  <section id="service" class="services-mf route" style="padding-top: 70px; padding-bottom: 50px">
+  <section id="skills" class="services-mf route" style="padding-top: 70px; padding-bottom: 50px">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -287,14 +287,48 @@
           <p class="subtitle-a"> </p>
           <div class="line-mf"></div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
 
-            <div id="job-cont" class="owl-carousel owl-theme">
+        <div class="row">
+          <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
+
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+                <section class="blog-wrapper" id="blog">
+                  <div class="container">
+                    <div class="post-meta">
+                      <h1 class="article-title">Title</h1>
+                      <ul>
+                        <li><a target="_blank" href="">Link</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      description
+                    </div>
+                  </div>
+                </section>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
 
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -424,7 +458,7 @@
             </ul>
           </div>
           <div class="credits" >
-            <p class="copyright">&copy; 2019 <strong>Kevin Chen</strong> | v2.3 | <a class="previous" href="http://v1.kev-chen.me/">Previous Version</a></p>
+            <p class="copyright">&copy; 2019 <strong>Kevin Chen</strong> | v2.1.5 | <a class="previous" href="http://v1.kev-chen.me/">Previous Version</a></p>
           </div>
           <div class="credits">
             Designed by <a target="_blank" href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -456,5 +490,6 @@
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script src="js/function.js"></script>
+
 </body>
 </html>

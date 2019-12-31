@@ -73,6 +73,7 @@
 .portfolio-thumbnail img {
   max-width: 100%;
 }
+/* Portolio */
 
 /* Footer Line */
 #wrapper.divided > * {
@@ -1367,10 +1368,12 @@ footer .copyright {
 
 footer .credits {
   margin-bottom: 0;
+  font-family: 'Poppins';
 }
 
 footer .credits a {
   color: black;
+  font-family: 'Poppins';
 }
 
 /*======================================
