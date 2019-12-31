@@ -179,10 +179,10 @@ $(document).ready(function() {
 	/*--/ Summit owl /--*/
 	$('#summit-cont').owlCarousel({
 		margin: 20,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
-		loop: true,
+		loop: false,
 		responsive: {
 			0: {
 				items: 1,

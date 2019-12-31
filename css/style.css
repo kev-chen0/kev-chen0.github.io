@@ -147,8 +147,8 @@
 
 .iconSize {
   display: block;
-  width: 30px * 2.42105263158;
-  height: 30px;
+  width: 50px * 2.42105263158;
+  height: 50px;
   object-fit: cover;
 }
 
@@ -389,7 +389,7 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .sect-mt4 {
