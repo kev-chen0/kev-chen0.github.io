@@ -105,26 +105,12 @@ const experience = [
     link_name: "EG1003 Course",
     demo_link: "https://eg.poly.edu/staffimages.php?staff=ta",
     site: "",
-    long_description: ["Work with students in first year engineering course", "Mentor first-year students in semester-long design projects for introductory cornerstone engineering course, EG1003 Intro to Engineering and Design"],
+    long_description: ["Work with students in first year engineering course", "Mentor first-year students in semester-long design projects for introductory cornerstone engineering course, EG1003 Intro to Engineering and Design", "Teach basic engineering concepts such as micro-controllers, digital logic, CAD, etc."],
     short_description: "Work with students in first year engineering course",
     date: "September 2019 - Present",
 
     tab_name: "eg1003",
     logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
-  },
-  {
-    head_image: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
-    category_title: "Computer Science Peer Tutor",
-    real_title: "TRIO Scholars Program",
-    link_name: "TRIO",
-    demo_link: "https://engineering.nyu.edu/academics/support-services/undergraduate-services/trio-scholars-program",
-    site: "",
-    long_description: ["Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)", "Answer questions / prepare students for exams in fundamentals of computer programming and its underlying principles using the Python programming language for 3 hrs/week in a semester"],
-    short_description: "Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)",
-    date: "Feburary 2019 - Present",
-
-    tab_name: "trio",
-    logo: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
   },
   {
     head_image: "https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg",
@@ -133,7 +119,7 @@ const experience = [
     link_name: "Holodeck",
     demo_link: "https://www.nyu.edu/about/news-publications/publications/alumni-magazine/spring-2018/features/welcome-to-the-holodeck.html",
     site: "",
-    long_description: ["Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output", " Collaborated with investigators in NSF-funded research project to develop robotic learning system using OptiTrack, Python, iOS application, and MQTT broker, in collaboration with the NYU Holodeck Project"],
+    long_description: ["Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output", " Collaborated with investigators in NSF-funded research project to develop robotic learning system using OptiTrack, Python, iOS application, and MQTT broker, in collaboration with the NYU Holodeck Project", "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture at NYU-X lab"],
     short_description: "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output",
     date: "May 2019 - August 2019",
 
@@ -153,6 +139,20 @@ const experience = [
 
     tab_name: "siteseer",
     logo: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
+  },
+  {
+    head_image: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
+    category_title: "Computer Science Peer Tutor",
+    real_title: "TRIO Scholars Program",
+    link_name: "TRIO",
+    demo_link: "https://engineering.nyu.edu/academics/support-services/undergraduate-services/trio-scholars-program",
+    site: "",
+    long_description: ["Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)", "Answer questions / prepare students for exams in fundamentals of computer programming and its underlying principles using the Python programming language for 3 hrs/week in a semester"],
+    short_description: "Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)",
+    date: "Feburary 2019 - Present",
+
+    tab_name: "trio",
+    logo: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
   }
 ]
 
