@@ -267,7 +267,7 @@ const projects = [
     category_title: "Automated Mouth Moment",
     real_title: "Automated Mouth Moment",
     link_name: "GitHub",
-    demo_link: "https://github.com/kevin-chen/Lip-Detection-OpenCV",
+    demo_link: "https://github.com/kevin-chen/tech-stack/tree/master/distance-opencv",
     site: "",
     long_description: ["Utilized OpenCV to measure distance between upper and lower lips", "Programmed Arduino using servos to mimic mouth movement"],
     short_description: "Utilized OpenCV to measure distance between upper and lower lips",
