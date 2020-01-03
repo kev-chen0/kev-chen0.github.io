@@ -110,8 +110,26 @@ const loadJobs = (list) => {
       description.append(li_elem)
     }
 
+    let carousel_pictures = document.createElement("div")
+    carousel_pictures.classList = "experience-carousel owl-carousel owl-theme"
+    let carousel_work = document.createElement("div")
+    carousel_work.classList = "work-box"
+    let carousel_a = document.createElement("a")
+    carousel_a.setAttribute("data-fancybox", "")
+    carousel_a.setAttribute("data-src", "https://cd.foundation/wp-content/uploads/sites/78/2019/08/Logo-JPMorgan-Chase-2018.png")
+    let carousel_div_img = document.createElement("div")
+    carousel_div_img.classList = "work-img"
+    let carousel_img = document.createElement("img")
+    carousel_img.src = "https://cd.foundation/wp-content/uploads/sites/78/2019/08/Logo-JPMorgan-Chase-2018.png"
+    carousel_img.classList = "img-fluid imgSize"
+    carousel_div_img.append(carousel_img)
+    carousel_a.append(carousel_div_img)
+    carousel_work.append(carousel_a)
+    carousel_pictures.append(carousel_work)
+
     contain_div.append(post_div)
     contain_div.append(description)
+    contain_div.append(carousel_pictures)
 
     sec.append(contain_div)
 
