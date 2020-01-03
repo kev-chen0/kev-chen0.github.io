@@ -112,10 +112,22 @@ $(document).ready(function() {
 		});
 	}
 
-  // Pictures
+  // Experience
   $('.experience-carousel').owlCarousel({
       autoplay: true,
       autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      loop: true,
+      margin: 20,
+      nav: true,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 } }
+    });
+
+  // Project
+  $('.project-carousel').owlCarousel({
+      autoplay: true,
+      autoplayTimeout: 5000,
       autoplayHoverPause: true,
       loop: true,
       margin: 20,
