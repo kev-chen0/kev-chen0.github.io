@@ -79,6 +79,11 @@ const skills = [
     img: "https://qautomationhome.files.wordpress.com/2019/05/rest_api.png",
     title: "RESTApi",
     subtitle: "Experienced with RESTful services in developing web and mobile applications"
+  },
+  {
+    img: "https://lh3.googleusercontent.com/2AsGaXxuibavh2eE507dMrcNyRn09ALo_0upJGjcvDe-SwQL3G3hhpqY2HFJ7kHKeevLkjaHmwoxZVcbJCsDWA=w640-h480-p",
+    title: "Machining Tools",
+    subtitle: "Experienced with 3D printing, CAD, laser cutting"
   }
 ]
 
@@ -178,18 +183,18 @@ const projects = [
     pictures: ["https://img.icons8.com/plasticine/100/000000/questions.png", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Features/overview.gif", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Journey/seventh.png"],
   },
   {
-    head_image: "http://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
+    head_image: "https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg",
     category_title: "SiteSeer",
     real_title: "First Year Engineering Project",
     link_name: "MakerSpace Article",
-    demo_link: "http://makerspace.engineering.nyu.edu/designlab/personal-navigator/",
+    demo_link: "https://makerspace.engineering.nyu.edu/designlab/personal-navigator/",
     site: "",
     long_description: ["Developed disability friendly application for those with vision impairments to navigate indepedently", "Implemented Google Cloud with Firebase, AutoVision ML, Storage, Directions API, and Speech Services to develop assistive navigation technology", "<div class='fix_center intro intro-single route'><iframe width='420' height='100%' class='intro intro-single' src='https://www.youtube.com/embed/WR3HkmROxYw'></iframe></div>"],
     short_description: "Developed disability friendly application for those with vision impairments to navigate indepedently",
     date: "January 2019 - May 2019",
 
     categories: "Python Arduino iOS",
-    pictures: ["http://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/IMG_9416.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/flowchart.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/app_1.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/youtubeLive.gif"],
+    pictures: ["https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/IMG_9416.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/flowchart.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/app_1.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/youtubeLive.gif"],
   },
   {
     head_image: "https://github.com/kevin-chen/Artificial-Intelligence-FTC-Robotics-12178/blob/master/robot.jpg?raw=true",
