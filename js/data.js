@@ -84,6 +84,11 @@ const skills = [
     img: "https://lh3.googleusercontent.com/2AsGaXxuibavh2eE507dMrcNyRn09ALo_0upJGjcvDe-SwQL3G3hhpqY2HFJ7kHKeevLkjaHmwoxZVcbJCsDWA=w640-h480-p",
     title: "Machining Tools",
     subtitle: "Experienced with 3D printing, CAD, laser cutting"
+  },
+  {
+    img: "https://secure.meetupstatic.com/photos/event/1/8/7/8/highres_475266264.jpeg",
+    title: "IBM Cloud",
+    subtitle: "Familiar with using IBM Cloud in iOS app development in Swift"
   }
 ]
 

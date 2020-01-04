@@ -262,6 +262,10 @@
 }
 
 @media (min-width: 1000px) {
+  .big-pdfview {
+      max-height : 80%;
+      margin: 0;
+  }
   .fancybox-slide--iframe .fancybox-content {
       max-width  : 50%;
       max-height : 70%;

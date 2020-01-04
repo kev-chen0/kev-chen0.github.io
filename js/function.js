@@ -1,3 +1,24 @@
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 700) {
+      $('.exp1').addClass('col');
+      $('.exp2').addClass('col');
+      $('.exp1').removeClass('col-3');
+      $('.exp2').removeClass('col-9');
+    } else if (ww >= 701) {
+      $('.exp1').removeClass('col');
+      $('.exp2').removeClass('col');
+      $('.exp1').addClass('col-3');
+      $('.exp2').addClass('col-9');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  alterClass();
+});
+
 $(document).ready(function() {
 
   $('.testimonial-box').on('click', function(event){
