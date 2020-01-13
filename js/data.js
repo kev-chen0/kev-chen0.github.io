@@ -174,6 +174,20 @@ const experience = [
 // Project Info
 const projects = [
   {
+    head_image: "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png",
+    category_title: "MaxBack",
+    real_title: "Capital One Software Engineering Summit Hackathon",
+    link_name: "Live Application",
+    demo_link: "https://capitaloneses2020.herokuapp.com/",
+    site: "",
+    long_description: ["Developed app that helps users maximize cash back rewards by selecting the best credit card to use based on geographic location/store type and current cashback rewards rotation", "<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png'>"],
+    short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
+    date: "October 2020",
+
+    categories: "Web Python",
+    pictures: ["https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2012.02.45%20PM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png"],
+  },
+  {
     head_image: "https://img.icons8.com/plasticine/100/000000/questions.png",
     category_title: "Trivia Me This",
     real_title: "Trivia Web Application",
@@ -184,7 +198,7 @@ const projects = [
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
     date: "October 2020",
 
-    categories: "Web",
+    categories: "Web Python",
     pictures: ["https://img.icons8.com/plasticine/100/000000/questions.png", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Features/overview.gif", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Journey/seventh.png"],
   },
   {
@@ -368,12 +382,12 @@ const summits = [
   {
     head_image: "https://media.bizj.us/view/img/11119861/cap-one-entrance*750xx2048-1152-0-192.jpg",
     category_title: "Software Engineering Summit",
-    real_title: "Sumitter",
+    real_title: "Summit",
     link_name: "Capital One",
     demo_link: "https://campus.capitalone.com/summits/",
     site: "",
-    long_description: ["Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning"],
-    short_description: "Highly selective one-week technical program at Capital One headquarters",
+    long_description: ["<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://capitaloneses2020.herokuapp.com/'>Live App</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_group.JPG?alt=media&token=022072c2-73be-4abb-b292-741f0bba6d6f'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png'>"],
+    short_description: "Highly selective one-week technical program at Capital One headquarters in McLean, VA",
     date: "January 2020",
 
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
