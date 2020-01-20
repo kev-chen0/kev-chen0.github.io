@@ -106,7 +106,16 @@ const loadJobs = (list) => {
     let description = document.createElement("ul")
     for (i = 0; i < job.long_description.length; i++) {
       let li_elem = document.createElement("li")
-      li_elem.append(job.long_description[i])
+      if (job.long_description[i].includes("https")) {
+        let aTAG = document.createElement("a")
+        aTAG.setAttribute("target", "_blank")
+        aTAG.setAttribute("href", job.long_description[i].split('~')[1])
+        aTAG.innerText = job.long_description[i].split('~')[0]
+        li_elem.append(aTAG)
+      }
+      else {
+        li_elem.append(job.long_description[i])
+      }
       description.append(li_elem)
     }
 
@@ -151,12 +160,13 @@ const loadProjects = (list) => {
     // Images: 31.28W X 23.46H
     let firstDiv = document.createElement("div")
     firstDiv.classList = "col-lg-4 col-md-6 portfolio-thumbnail all " + project.categories
+    if (!project.categories.includes("Python")) firstDiv.style = "display: none"
 
     let workDiv = document.createElement("div")
     workDiv.classList = "work-box"
 
     let a_tag = document.createElement("a")
-    var queryString = "?info=" + "projects" + count;
+    var queryString = "?info=" + "projects-" + count;
 
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
@@ -252,7 +262,7 @@ const loadActivities = (list) => {
   var count = 0;
   list.map(activities => {
     let a_tag = document.createElement("a")
-    var queryString = "?info=" + "activities" + count;
+    var queryString = "?info=" + "activities-" + count;
 
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")
@@ -345,7 +355,7 @@ const loadSummits = (list) => {
   var count = 0;
 	list.map(summit => {
     let a_tag = document.createElement("a")
-    var queryString = "?info=" + "summits" + count;
+    var queryString = "?info=" + "summits-" + count;
 
     a_tag.setAttribute("data-fancybox", "")
     a_tag.setAttribute("data-type", "iframe")

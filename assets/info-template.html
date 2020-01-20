@@ -6,8 +6,10 @@
   function myFunction() {
     let queryString = decodeURIComponent(window.location.search); //parsing
     let query = queryString.split("=")[1];
-    let section = query.substring(0, query.length - 1);
-    let num = parseInt(query.substring(query.length - 1, query.length), 10);
+    let number = query.split("-")[1];
+    let section = query.split("-")[0];
+    // let section = query.substring(0, query.length - 1);
+    let num = parseInt(number, 10);
     let obj = eval(section)[num];
 
     let header_image = eval(section)[num]['head_image'];
