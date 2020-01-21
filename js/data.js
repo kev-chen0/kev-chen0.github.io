@@ -146,13 +146,13 @@ const experience = [
     link_name: "Project Folder",
     demo_link: "https://drive.google.com/drive/folders/1U-yyWOkJXzUdYX6WLRdEcKGQGR0_xiCT?usp=sharing",
     site: "",
-    long_description: ["Project Link~https://drive.google.com/drive/folders/109VDft-m29_GcG9M0LOs06uNv-hAYdUQ?usp=sharing", "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud", "Managed 10-week design project by preparing milestone presentations, weekly reports, and demo video"],
+    long_description: ["Project Presentation Link~https://drive.google.com/open?id=1mgdCk0yXF2Kuy028lika3NxHvgnxBdtq", "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud", "Managed 10-week design project by preparing milestone presentations, weekly reports, and demo video"],
     short_description: "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud",
     date: "January 2019 - May 2019",
 
     tab_name: "siteseer",
     logo: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
-    pictures: ["https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/makerspace_rad.jpg?alt=media&token=41600153-9861-43bb-8741-29e07f69c08e", "https://media-exp1.licdn.com/media-proxy/ext?w=1024&h=605&f=n&hash=mHm%2FF7cxCCVlFUvksu8iBLN9t4s%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi7LcCJeLH1rEATeS8DjQBkLeq1SDLiGo65fYvsfopzjpPlLcb5agYUbhl4lWdI"],
+    pictures: ["https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/FinalProjectSchedule.png?alt=media&token=2eec4879-1e62-4590-886b-2486f0896991", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/makerspace_rad.jpg?alt=media&token=41600153-9861-43bb-8741-29e07f69c08e", "https://media-exp1.licdn.com/media-proxy/ext?w=1024&h=605&f=n&hash=mHm%2FF7cxCCVlFUvksu8iBLN9t4s%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi7LcCJeLH1rEATeS8DjQBkLeq1SDLiGo65fYvsfopzjpPlLcb5agYUbhl4lWdI"],
   },
   {
     head_image: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
@@ -213,7 +213,7 @@ const projects = [
     date: "January 2019 - May 2019",
 
     categories: "Python Arduino iOS",
-    pictures: ["https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/IMG_9416.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/flowchart.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/app_1.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/youtubeLive.gif"],
+    pictures: ["https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/FinalProjectSchedule.png?alt=media&token=2eec4879-1e62-4590-886b-2486f0896991", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/IMG_9416.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/flowchart.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/app_1.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/youtubeLive.gif"],
   },
   {
     head_image: "https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png",
