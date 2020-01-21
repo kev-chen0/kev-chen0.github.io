@@ -146,7 +146,7 @@ const experience = [
     link_name: "Project Folder",
     demo_link: "https://drive.google.com/drive/folders/1U-yyWOkJXzUdYX6WLRdEcKGQGR0_xiCT?usp=sharing",
     site: "",
-    long_description: ["Project Presentation Link~https://drive.google.com/open?id=1mgdCk0yXF2Kuy028lika3NxHvgnxBdtq", "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud", "Managed 10-week design project by preparing milestone presentations, weekly reports, and demo video"],
+    long_description: ["Project Link~https://drive.google.com/drive/folders/109VDft-m29_GcG9M0LOs06uNv-hAYdUQ?usp=sharing", "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud", "Managed 10-week design project by preparing milestone presentations, weekly reports, and demo video"],
     short_description: "Freshman Design Project. Developed assistive navigation technology for visually impaired individuals by implementing Raspberry Pi, Python, and Google Cloud",
     date: "January 2019 - May 2019",
 
