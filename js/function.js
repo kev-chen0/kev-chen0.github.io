@@ -129,7 +129,8 @@ $(document).ready(function() {
 			typeSpeed: 80,
 			loop: true,
 			backDelay: 1100,
-			backSpeed: 30
+			backSpeed: 30,
+      smartBackspace: true,
 		});
 	}
 

@@ -310,7 +310,16 @@ const loadActivities = (list) => {
 
 // Loading Awards
 const loadAwards = (list) => {
+  var count = 0;
   list.map(award => {
+    let a_tag = document.createElement("a")
+    var queryString = "?info=" + "awards-" + count;
+
+    a_tag.setAttribute("data-fancybox", "")
+    a_tag.setAttribute("data-type", "iframe")
+    if (award.site != "") a_tag.setAttribute("data-src", award.site)
+    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
+
 		let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
 
@@ -319,11 +328,11 @@ const loadAwards = (list) => {
 		let name_span = document.createElement("span")
 		author_div.classList = "author-test"
 		award_img.classList = "b-shadow-a"
-		award_img.src = award.image
+		award_img.src = award.head_image
 		award_img.width = "100"
 		award_img.height = "100"
 		name_span.classList = "author"
-		name_span.innerText = award.org
+		name_span.innerText = award.category_title
 		author_div.append(award_img)
 		author_div.append(name_span)
 
@@ -336,7 +345,7 @@ const loadAwards = (list) => {
 		let sub_icon_span = document.createElement("span")
 		let i_tag = document.createElement("i")
 		description_p.classList = "description lead"
-		description_p.innerText = award.title
+		description_p.innerText = award.short_description
 		sub_icon_span.classList = "comit"
 		i_tag.classList = "fa fa-trophy"
 		sub_icon_span.append(i_tag)
@@ -347,7 +356,11 @@ const loadAwards = (list) => {
 		testimonial_div.append(author_div)
 		testimonial_div.append(content_div)
 
-		awardCont.append(testimonial_div)
+    a_tag.append(testimonial_div)
+
+		awardCont.append(a_tag)
+
+    count += 1;
   })
 }
 

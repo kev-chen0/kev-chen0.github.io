@@ -358,22 +358,37 @@ const activities = [
 // Awards Info
 const awards = [
   {
-    org: "TechFestival Hackathon",
-    title: "Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)",
-    image: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png",
-    date: "March 2019"
+    head_image: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png",
+    category_title: "TechFestival Hackathon",
+    real_title: "Hackathon",
+    link_name: "April 2019",
+    demo_link: "https://devpost.com/software/walkerbuddy",
+    site: "",
+    long_description: ["Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_demo.jpg?alt=media&token=3fb3f6ea-51ac-493b-ba28-38070e5aeb90'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_end.jpg?alt=media&token=da4aa4ad-2a3e-4bfe-9247-10bc93f7625b'>"],
+    short_description: "Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)",
+    date: "March 2019",
   },
   {
-    org: "EG1003 RAD Project​​",
-    title: "Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)",
-    image: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
-    date: "May 2019"
+    head_image: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
+    category_title: "EG1003 RAD Project",
+    real_title: "",
+    link_name: "MakerSpace Article",
+    demo_link: "http://makerspace.engineering.nyu.edu/designlab/personal-navigator/",
+    site: "",
+    long_description: ["Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tandon.jpg?alt=media&token=867afd97-2ea2-4a19-a4c4-e191abc4f0ef'>"],
+    short_description: "Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)",
+    date: "May 2019",
   },
   {
-    org: "FIRST Robotics Inspire Award​",
-    title: "Advanced to NYC Robotics Championships & Strong STEM Community Outreach",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/FIRST_Logo.svg/1200px-FIRST_Logo.svg.png",
-    date: "January 2018"
+    head_image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/FIRST_Logo.svg/1200px-FIRST_Logo.svg.png",
+    category_title: "FIRST Robotics Inspire Award",
+    real_title: "FTC Robotics",
+    link_name: "FIRST NYC",
+    demo_link: "https://www.nycfirst.org/programs/ftc",
+    site: "",
+    long_description: ["Advanced to NYC Robotics Championships & Strong STEM Community Outreach", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_robot_win.jpg?alt=media&token=41032364-eec3-44a4-b21a-55d9a0822894'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/robot.jpg?alt=media&token=bb345d35-f755-4bdb-a572-919ca0081353'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_12178.jpg?alt=media&token=44fca2cc-451f-4557-9bd5-64775c892cc7'>"],
+    short_description: "Advanced to NYC Robotics Championships & Strong STEM Community Outreach",
+    date: "January 2018",
   }
 ]
 
