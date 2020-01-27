@@ -395,7 +395,7 @@ const awards = [
 // Summit Info
 const summits = [
   {
-    head_image: "https://media.bizj.us/view/img/11119861/cap-one-entrance*750xx2048-1152-0-192.jpg",
+    head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/c1-interview.jpg?alt=media&token=1f2a2fb3-0d35-41a2-b936-d167c54ffb7b",
     category_title: "Software Engineering Summit",
     real_title: "Summit",
     link_name: "Capital One",
