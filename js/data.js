@@ -95,6 +95,21 @@ const skills = [
 // Experience Info
 const experience = [
   {
+    head_image: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
+    category_title: "Incoming Software Engineering Intern",
+    real_title: "Capital One",
+    link_name: "Technology Intern Program",
+    demo_link: "https://campus.capitalone.com/technology-program?id=internship",
+    site: "",
+    long_description: ["Attended selective one-week program at Capital One headquarters, January 2020"],
+    short_description: "",
+    date: "June 2020 - Present",
+
+    tab_name: "capitalone",
+    logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
+    pictures: [],
+  },
+  {
     head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
     category_title: "Teaching Assistant",
     real_title: "Intro to Engineering & Design",
@@ -108,6 +123,21 @@ const experience = [
     tab_name: "eg1003",
     logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
     pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4", "https://manual.eg.poly.edu/images/thumb/9/9b/BDR_Course1-1-.jpg/1200px-BDR_Course1-1-.jpg", "https://manual.eg.poly.edu/images/c/c2/Labelled-mrr-super-correct.jpg"],
+  },
+  {
+    head_image: "https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg",
+    category_title: "Software Development Intern",
+    real_title: "NYU Holodeck Project",
+    link_name: "Holodeck",
+    demo_link: "https://www.nyu.edu/about/news-publications/publications/alumni-magazine/spring-2018/features/welcome-to-the-holodeck.html",
+    site: "",
+    long_description: ["Research Poster Link~https://drive.google.com/file/d/1zrOeFhpE9dras_V5jy0ven2E1ugefBr-/view", "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output", " Collaborated with investigators in NSF-funded research project to develop robotic learning system using OptiTrack, Python, iOS application, and MQTT broker, in collaboration with the NYU Holodeck Project", "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture at NYU-X lab"],
+    short_description: "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output",
+    date: "May 2019 - August 2019",
+
+    tab_name: "nyux",
+    logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80",
+    pictures: ["https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80"],
   },
   {
     head_image: "https://cd.foundation/wp-content/uploads/sites/78/2019/08/Logo-JPMorgan-Chase-2018.png",
@@ -125,21 +155,6 @@ const experience = [
     pictures: ["https://cd.foundation/wp-content/uploads/sites/78/2019/08/Logo-JPMorgan-Chase-2018.png", "https://camo.githubusercontent.com/f69d1132e2984e2a97209fc21520e9812c464873/68747470733a2f2f70657273706563746976652e66696e6f732e6f72672f696d672f64656d6f5f736d616c6c2e676966"],
   },
   {
-    head_image: "https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg",
-    category_title: "Research Intern",
-    real_title: "NYU Holodeck Project",
-    link_name: "Holodeck",
-    demo_link: "https://www.nyu.edu/about/news-publications/publications/alumni-magazine/spring-2018/features/welcome-to-the-holodeck.html",
-    site: "",
-    long_description: ["Research Poster Link~https://drive.google.com/file/d/1zrOeFhpE9dras_V5jy0ven2E1ugefBr-/view", "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output", " Collaborated with investigators in NSF-funded research project to develop robotic learning system using OptiTrack, Python, iOS application, and MQTT broker, in collaboration with the NYU Holodeck Project", "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture at NYU-X lab"],
-    short_description: "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output",
-    date: "May 2019 - August 2019",
-
-    tab_name: "nyux",
-    logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80",
-    pictures: ["https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80"],
-  },
-  {
     head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/makerspace_rad.jpg?alt=media&token=41600153-9861-43bb-8741-29e07f69c08e",
     category_title: "Project Manager",
     real_title: "SiteSeer",
@@ -153,21 +168,6 @@ const experience = [
     tab_name: "siteseer",
     logo: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
     pictures: ["https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/FinalProjectSchedule.png?alt=media&token=2eec4879-1e62-4590-886b-2486f0896991", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/makerspace_rad.jpg?alt=media&token=41600153-9861-43bb-8741-29e07f69c08e", "https://media-exp1.licdn.com/media-proxy/ext?w=1024&h=605&f=n&hash=mHm%2FF7cxCCVlFUvksu8iBLN9t4s%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi7LcCJeLH1rEATeS8DjQBkLeq1SDLiGo65fYvsfopzjpPlLcb5agYUbhl4lWdI"],
-  },
-  {
-    head_image: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
-    category_title: "Computer Science Peer Tutor",
-    real_title: "TRIO Scholars Program",
-    link_name: "TRIO",
-    demo_link: "https://engineering.nyu.edu/academics/support-services/undergraduate-services/trio-scholars-program",
-    site: "",
-    long_description: ["Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)", "Answer questions / prepare students for exams in fundamentals of computer programming and its underlying principles using the Python programming language for 3 hrs/week in a semester"],
-    short_description: "Tutor undergraduate students in Intro to Programming and Problem Solving (CS 1114) and Data Structures and Algorithms (CS 1134)",
-    date: "Feburary 2019 - Present",
-
-    tab_name: "trio",
-    logo: "https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs",
-    pictures: ["https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-10/born-anywhere.jpg?h=d1cb525d&itok=Wk6AUyLs", "https://engineering.nyu.edu/sites/default/files/styles/content_header_620_2x/public/2019-03/zgroup_students1_1_0.jpg?itok=3IXqlh3v"],
   }
 ]
 
