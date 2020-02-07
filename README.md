@@ -13,6 +13,7 @@
 
 ### Resources:
 
+- Skills Section (Pop Up & Image Scroll): https://codepen.io/kevin-chen-the-animator/pen/LYEawqY
 - Lightbox Effect: https://fancyapps.com/fancybox/3/docs/
 - Files relative to previous directory: use ../
 - Using JS to create html page:
