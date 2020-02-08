@@ -7,6 +7,118 @@ const projs = document.getElementById("project-cont")
 const activity = document.getElementById("activities-cont")
 const awardCont = document.getElementById("awards-cont")
 const summitCont = document.getElementById("summit-cont")
+const footerCont = document.getElementById("wrapper")
+
+// Modal Maker
+function createModal(project) {
+  // Add to Wrapper
+  // contentDiv.setAttribute("data-toggle", "modal")
+  // contentDiv.setAttribute("data-target", "#" + project.tab_name)
+  // Modal Start
+  let modalDiv = document.createElement("div")
+  modalDiv.classList = "modal fade"
+  modalDiv.id = project.tab_name
+  modalDiv.setAttribute("tabindex", "-1")
+  modalDiv.setAttribute("role", "dialog")
+  modalDiv.setAttribute("aria-labelledby", "exampleModalLabel")
+  modalDiv.setAttribute("aria-hidden", "true")
+  let modalDialog = document.createElement("div")
+  modalDialog.classList = "modal-dialog modal-lg"
+  modalDialog.setAttribute("role", "document")
+  let modalContent = document.createElement("div")
+  modalContent.classList = "modal-content"
+  let modalHeader = document.createElement("div")
+  modalHeader.classList = "modal-header"
+  let modalH5 = document.createElement("h5")
+  modalH5.classList = "modal-title"
+  modalH5.id = "exampleModalLabel"
+  modalH5.innerText = project.category_title
+  modalHeader.append(modalH5)
+  let modalButton = document.createElement("button")
+  modalButton.setAttribute("type", "button")
+  modalButton.classList = "close"
+  modalButton.setAttribute("data-dismiss", "modal")
+  modalButton.setAttribute("aria-label", "Close")
+  let modalSpan = document.createElement("span")
+  modalSpan.setAttribute("aria-hidden", "true")
+  modalSpan.innerHTML = "&times;"
+  modalButton.append(modalSpan)
+  modalHeader.append(modalButton)
+  let modalBody = document.createElement("div")
+  modalBody.classList = "modal-body"
+
+  let bodySection = document.createElement("section")
+  bodySection.classList = "blog-wrapper"
+  bodySection.id = "blog"
+  let bodyDiv = document.createElement("div")
+  bodyDiv.classList = "container"
+  let bodyPost = document.createElement("div")
+  bodyPost.classList = "post-meta"
+  let posth1 = document.createElement("h1")
+  posth1.classList = "article-title"
+  posth1.innerText = project.real_title
+  let postul = document.createElement("ul")
+  postul.classList = "text-left"
+  let postli = document.createElement("li")
+  let posta = document.createElement("a")
+  posta.setAttribute("target", "_blank")
+  posta.setAttribute("href", project.demo_link)
+  posta.innerText = project.link_name
+  postli.append(posta)
+  postul.append(postli)
+  bodyPost.append(posth1)
+  bodyPost.append(postul)
+  bodyDiv.append(bodyPost)
+  let detailsUl = document.createElement("ul")
+  detailsUl.classList = "text-left"
+  let description = "";
+  for (i = 0; i < project.long_description.length; i++) {
+    description += "<li>" + project.long_description[i] + "</li>"
+  }
+  detailsUl.innerHTML = description
+
+  bodySection.append(bodyDiv)
+  bodySection.append(detailsUl)
+
+  let carousel_pictures1 = document.createElement("div")
+  carousel_pictures1.classList = "project-carousel owl-carousel owl-theme"
+
+  for (let pic in project.pictures) {
+    let carousel_work1 = document.createElement("div")
+    carousel_work1.classList = "work-box"
+    let carousel_a1 = document.createElement("a")
+    carousel_a1.setAttribute("data-fancybox", "gallery")
+    carousel_a1.setAttribute("data-src", project.pictures[pic])
+    let carousel_div_img1 = document.createElement("div")
+    carousel_div_img1.classList = "work-img"
+    let carousel_img1 = document.createElement("img")
+    carousel_img1.src = project.pictures[pic]
+    carousel_img1.classList = "img-fluid largerAspect"
+    carousel_div_img1.append(carousel_img1)
+    carousel_a1.append(carousel_div_img1)
+    carousel_work1.append(carousel_a1)
+    carousel_pictures1.append(carousel_work1)
+  }
+
+  modalBody.append(bodySection)
+  modalBody.append(carousel_pictures1)
+
+  let modalFoot = document.createElement("div")
+  modalFoot.classList = "modal-footer"
+  let footBotton = document.createElement("button")
+  footBotton.setAttribute("type", "button")
+  footBotton.classList = "btn btn-secondary"
+  footBotton.setAttribute("data-dismiss", "modal")
+  footBotton.innerText = "Close"
+  modalFoot.append(footBotton)
+  modalContent.append(modalHeader)
+  modalContent.append(modalBody)
+  modalContent.append(modalFoot)
+  modalDialog.append(modalContent)
+  modalDiv.append(modalDialog)
+  // Modal End
+  return modalDiv
+}
 
 // Loading skills
 const loadSkills = (list) => {
@@ -240,109 +352,7 @@ const loadProjects = (list) => {
     workDiv.append(imgDiv)
     workDiv.append(contentDiv)
 
-    // Modal Start
-    let modalDiv = document.createElement("div")
-    modalDiv.classList = "modal fade"
-    modalDiv.id = project.tab_name
-    modalDiv.setAttribute("tabindex", "-1")
-    modalDiv.setAttribute("role", "dialog")
-    modalDiv.setAttribute("aria-labelledby", "exampleModalLabel")
-    modalDiv.setAttribute("aria-hidden", "true")
-    let modalDialog = document.createElement("div")
-    modalDialog.classList = "modal-dialog modal-lg"
-    modalDialog.setAttribute("role", "document")
-    let modalContent = document.createElement("div")
-    modalContent.classList = "modal-content"
-    let modalHeader = document.createElement("div")
-    modalHeader.classList = "modal-header"
-    let modalH5 = document.createElement("h5")
-    modalH5.classList = "modal-title"
-    modalH5.id = "exampleModalLabel"
-    modalH5.innerText = project.category_title
-    modalHeader.append(modalH5)
-    let modalButton = document.createElement("button")
-    modalButton.setAttribute("type", "button")
-    modalButton.classList = "close"
-    modalButton.setAttribute("data-dismiss", "modal")
-    modalButton.setAttribute("aria-label", "Close")
-    let modalSpan = document.createElement("span")
-    modalSpan.setAttribute("aria-hidden", "true")
-    modalSpan.innerHTML = "&times;"
-    modalButton.append(modalSpan)
-    modalHeader.append(modalButton)
-    let modalBody = document.createElement("div")
-    modalBody.classList = "modal-body"
-
-    let bodySection = document.createElement("section")
-    bodySection.classList = "blog-wrapper"
-    bodySection.id = "blog"
-    let bodyDiv = document.createElement("div")
-    bodyDiv.classList = "container"
-    let bodyPost = document.createElement("div")
-    bodyPost.classList = "post-meta"
-    let posth1 = document.createElement("h1")
-    posth1.classList = "article-title"
-    posth1.innerText = project.real_title
-    let postul = document.createElement("ul")
-    postul.classList = "text-left"
-    let postli = document.createElement("li")
-    let posta = document.createElement("a")
-    posta.setAttribute("target", "_blank")
-    posta.setAttribute("href", project.demo_link)
-    posta.innerText = project.link_name
-    postli.append(posta)
-    postul.append(postli)
-    bodyPost.append(posth1)
-    bodyPost.append(postul)
-    bodyDiv.append(bodyPost)
-    let detailsUl = document.createElement("ul")
-    detailsUl.classList = "text-left"
-    let description = "";
-    for (i = 0; i < project.long_description.length; i++) {
-      description += "<li>" + project.long_description[i] + "</li>"
-    }
-    detailsUl.innerHTML = description
-
-    bodySection.append(bodyDiv)
-    bodySection.append(detailsUl)
-
-    let carousel_pictures1 = document.createElement("div")
-    carousel_pictures1.classList = "project-carousel owl-carousel owl-theme"
-
-    for (let pic in project.pictures) {
-      let carousel_work1 = document.createElement("div")
-      carousel_work1.classList = "work-box"
-      let carousel_a1 = document.createElement("a")
-      carousel_a1.setAttribute("data-fancybox", "gallery")
-      carousel_a1.setAttribute("data-src", project.pictures[pic])
-      let carousel_div_img1 = document.createElement("div")
-      carousel_div_img1.classList = "work-img"
-      let carousel_img1 = document.createElement("img")
-      carousel_img1.src = project.pictures[pic]
-      carousel_img1.classList = "img-fluid largerAspect"
-      carousel_div_img1.append(carousel_img1)
-      carousel_a1.append(carousel_div_img1)
-      carousel_work1.append(carousel_a1)
-      carousel_pictures1.append(carousel_work1)
-    }
-
-    modalBody.append(bodySection)
-    modalBody.append(carousel_pictures1)
-
-    let modalFoot = document.createElement("div")
-    modalFoot.classList = "modal-footer"
-    let footBotton = document.createElement("button")
-    footBotton.setAttribute("type", "button")
-    footBotton.classList = "btn btn-secondary"
-    footBotton.setAttribute("data-dismiss", "modal")
-    footBotton.innerText = "Close"
-    modalFoot.append(footBotton)
-    modalContent.append(modalHeader)
-    modalContent.append(modalBody)
-    modalContent.append(modalFoot)
-    modalDialog.append(modalContent)
-    modalDiv.append(modalDialog)
-    // Modal End
+    let modalDiv = createModal(project)
 
     workDiv.append(modalDiv)
 
@@ -354,18 +364,21 @@ const loadProjects = (list) => {
 
 // Loading Activities
 const loadActivities = (list) => {
-  var count = 0;
   list.map(activities => {
-    let a_tag = document.createElement("a")
-    var queryString = "?info=" + "activities-" + count;
-
-    a_tag.setAttribute("data-fancybox", "")
-    a_tag.setAttribute("data-type", "iframe")
-    if (activities.site != "") a_tag.setAttribute("data-src", activities.site)
-    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
-
-		let testimonial_div = document.createElement("div")
+    let testimonial_div = document.createElement("div")
 		testimonial_div.classList = "testimonial-box"
+
+    let a_tag = document.createElement("a")
+
+    if (activities.site != "") {
+      a_tag.setAttribute("data-fancybox", "")
+      a_tag.setAttribute("data-type", "iframe")
+      a_tag.setAttribute("data-src", activities.site)
+    }
+    else {
+      testimonial_div.setAttribute("data-toggle", "modal")
+      testimonial_div.setAttribute("data-target", "#" + activities.tab_name)
+    }
 
 		let author_div = document.createElement("div")
 		let award_img = document.createElement("img")
@@ -395,28 +408,32 @@ const loadActivities = (list) => {
 		testimonial_div.append(author_div)
 		testimonial_div.append(content_div)
 
+    let modalDiv = createModal(activities)
+
     a_tag.append(testimonial_div)
 
 		activity.append(a_tag)
-
-    count += 1;
+    footerCont.append(modalDiv)
   })
 }
 
 // Loading Awards
 const loadAwards = (list) => {
-  var count = 0;
   list.map(award => {
+    let testimonial_div = document.createElement("div")
+    testimonial_div.classList = "testimonial-box"
+
     let a_tag = document.createElement("a")
-    var queryString = "?info=" + "awards-" + count;
 
-    a_tag.setAttribute("data-fancybox", "")
-    a_tag.setAttribute("data-type", "iframe")
-    if (award.site != "") a_tag.setAttribute("data-src", award.site)
-    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
-
-		let testimonial_div = document.createElement("div")
-		testimonial_div.classList = "testimonial-box"
+    if (award.site != "") {
+      a_tag.setAttribute("data-fancybox", "")
+      a_tag.setAttribute("data-type", "iframe")
+      a_tag.setAttribute("data-src", award.site)
+    }
+    else {
+      testimonial_div.setAttribute("data-toggle", "modal")
+      testimonial_div.setAttribute("data-target", "#" + award.tab_name)
+    }
 
 		let author_div = document.createElement("div")
 		let award_img = document.createElement("img")
@@ -451,27 +468,31 @@ const loadAwards = (list) => {
 		testimonial_div.append(author_div)
 		testimonial_div.append(content_div)
 
+    let modalDiv = createModal(award)
+
     a_tag.append(testimonial_div)
 
 		awardCont.append(a_tag)
-
-    count += 1;
+    footerCont.append(modalDiv)
   })
 }
 
 const loadSummits = (list) => {
-  var count = 0;
 	list.map(summit => {
-    let a_tag = document.createElement("a")
-    var queryString = "?info=" + "summits-" + count;
-
-    a_tag.setAttribute("data-fancybox", "")
-    a_tag.setAttribute("data-type", "iframe")
-    if (summit.site != "") a_tag.setAttribute("data-src", summit.site)
-    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
-
     let testimonial_div = document.createElement("div")
-		testimonial_div.classList = "testimonial-box"
+    testimonial_div.classList = "testimonial-box"
+
+    let a_tag = document.createElement("a")
+
+    if (summit.site != "") {
+      a_tag.setAttribute("data-fancybox", "")
+      a_tag.setAttribute("data-type", "iframe")
+      a_tag.setAttribute("data-src", summit.site)
+    }
+    else {
+      testimonial_div.setAttribute("data-toggle", "modal")
+      testimonial_div.setAttribute("data-target", "#" + summit.tab_name)
+    }
 
 		let author_div = document.createElement("div")
 		let award_img = document.createElement("img")
@@ -507,11 +528,13 @@ const loadSummits = (list) => {
 		testimonial_div.append(author_div)
 		testimonial_div.append(content_div)
 
+    let modalDiv = createModal(summit)
+
     a_tag.append(testimonial_div)
 
 		summitCont.append(a_tag)
 
-    count += 1;
+    footerCont.append(modalDiv)
 	})
 }
 

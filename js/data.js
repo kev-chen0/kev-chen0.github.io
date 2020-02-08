@@ -377,9 +377,12 @@ const awards = [
     link_name: "April 2019",
     demo_link: "https://devpost.com/software/walkerbuddy",
     site: "",
-    long_description: ["Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_demo.jpg?alt=media&token=3fb3f6ea-51ac-493b-ba28-38070e5aeb90'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_end.jpg?alt=media&token=da4aa4ad-2a3e-4bfe-9247-10bc93f7625b'>"],
+    long_description: ["Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)"],
     short_description: "Overall Hackathon Winner & Best Use of Google Cloud (AutoVision ML, Speech Services, Firebase, Maps API, Storage)",
     date: "March 2019",
+    tab_name: "techfestival",
+
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_demo.jpg?alt=media&token=3fb3f6ea-51ac-493b-ba28-38070e5aeb90", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tech_fes_end.jpg?alt=media&token=da4aa4ad-2a3e-4bfe-9247-10bc93f7625b"],
   },
   {
     head_image: "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/logo.png",
@@ -388,9 +391,12 @@ const awards = [
     link_name: "MakerSpace Article",
     demo_link: "http://makerspace.engineering.nyu.edu/designlab/personal-navigator/",
     site: "",
-    long_description: ["Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tandon.jpg?alt=media&token=867afd97-2ea2-4a19-a4c4-e191abc4f0ef'>"],
+    long_description: ["Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)"],
     short_description: "Nick Russo Award Winner for Outstanding Design (Freshman Engineering Project)",
     date: "May 2019",
+    tab_name: "egrad",
+
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tandon.jpg?alt=media&token=867afd97-2ea2-4a19-a4c4-e191abc4f0ef"],
   },
   {
     head_image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/FIRST_Logo.svg/1200px-FIRST_Logo.svg.png",
@@ -399,9 +405,12 @@ const awards = [
     link_name: "FIRST NYC",
     demo_link: "https://www.nycfirst.org/programs/ftc",
     site: "",
-    long_description: ["Advanced to NYC Robotics Championships & Strong STEM Community Outreach", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_robot_win.jpg?alt=media&token=41032364-eec3-44a4-b21a-55d9a0822894'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/robot.jpg?alt=media&token=bb345d35-f755-4bdb-a572-919ca0081353'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_12178.jpg?alt=media&token=44fca2cc-451f-4557-9bd5-64775c892cc7'>"],
+    long_description: ["Advanced to NYC Robotics Championships & Strong STEM Community Outreach"],
     short_description: "Advanced to NYC Robotics Championships & Strong STEM Community Outreach",
     date: "January 2018",
+    tab_name: "firstinspire",
+
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_robot_win.jpg?alt=media&token=41032364-eec3-44a4-b21a-55d9a0822894", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/robot.jpg?alt=media&token=bb345d35-f755-4bdb-a572-919ca0081353", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_12178.jpg?alt=media&token=44fca2cc-451f-4557-9bd5-64775c892cc7"],
   }
 ]
 
@@ -414,11 +423,13 @@ const summits = [
     link_name: "Capital One",
     demo_link: "https://campus.capitalone.com/summits/",
     site: "",
-    long_description: ["<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://capitaloneses2020.herokuapp.com/'>Live App</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_group.JPG?alt=media&token=022072c2-73be-4abb-b292-741f0bba6d6f'>", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png'>"],
+    long_description: ["<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://capitaloneses2020.herokuapp.com/'>Live App</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning"],
     short_description: "Highly selective one-week technical program at Capital One headquarters in McLean, VA",
     date: "January 2020",
 
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
     company: "Capital One",
+    tab_name: "c1summit",
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_group.JPG?alt=media&token=022072c2-73be-4abb-b292-741f0bba6d6f", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png"],
   }
 ]
