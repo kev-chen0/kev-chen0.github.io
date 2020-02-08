@@ -206,7 +206,7 @@ $(document).ready(function() {
 	});
 
 	/*--/ Awards owl /--*/
-	$('#testimonial-mf').owlCarousel({
+	$('#awards-cont').owlCarousel({
 		margin: 20,
 		autoplay: true,
 		autoplayTimeout: 3000,

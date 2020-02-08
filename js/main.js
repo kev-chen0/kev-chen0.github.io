@@ -5,7 +5,7 @@ const jobsTab = document.getElementById("v-pills-tab")
 const jobsContent = document.getElementById("v-pills-tabContent")
 const projs = document.getElementById("project-cont")
 const activity = document.getElementById("activities-cont")
-const awardCont = document.getElementById("testimonial-mf")
+const awardCont = document.getElementById("awards-cont")
 const summitCont = document.getElementById("summit-cont")
 
 // Loading skills
@@ -155,7 +155,6 @@ const loadJobs = (list) => {
 
 // Loading Projects
 const loadProjects = (list) => {
-  var count = 0;
   list.map(project => {
     // Images: 31.28W X 23.46H
     let firstDiv = document.createElement("div")
@@ -164,14 +163,6 @@ const loadProjects = (list) => {
 
     let workDiv = document.createElement("div")
     workDiv.classList = "work-box"
-
-    let a_tag = document.createElement("a")
-    var queryString = "?info=" + "projects-" + count;
-
-    a_tag.setAttribute("data-fancybox", "")
-    a_tag.setAttribute("data-type", "iframe")
-    if (project.site != "") a_tag.setAttribute("data-src", project.link)
-    else a_tag.setAttribute("data-src", "assets/info-template.html" + queryString)
 
     let imgDiv = document.createElement("div")
     imgDiv.classList = "work-img"
@@ -204,6 +195,8 @@ const loadProjects = (list) => {
 
     let contentDiv = document.createElement("div")
     contentDiv.classList = "work-content"
+    contentDiv.setAttribute("data-toggle", "modal")
+    contentDiv.setAttribute("data-target", "#" + project.tab_name)
 
     let rowDiv = document.createElement("div")
     rowDiv.classList = "row"
@@ -244,16 +237,118 @@ const loadProjects = (list) => {
 
     contentDiv.append(rowDiv)
 
-    a_tag.append(imgDiv)
-    a_tag.append(contentDiv)
+    workDiv.append(imgDiv)
+    workDiv.append(contentDiv)
 
-    workDiv.append(a_tag)
+    // Modal Start
+    let modalDiv = document.createElement("div")
+    modalDiv.classList = "modal fade"
+    modalDiv.id = project.tab_name
+    modalDiv.setAttribute("tabindex", "-1")
+    modalDiv.setAttribute("role", "dialog")
+    modalDiv.setAttribute("aria-labelledby", "exampleModalLabel")
+    modalDiv.setAttribute("aria-hidden", "true")
+    let modalDialog = document.createElement("div")
+    modalDialog.classList = "modal-dialog modal-lg"
+    modalDialog.setAttribute("role", "document")
+    let modalContent = document.createElement("div")
+    modalContent.classList = "modal-content"
+    let modalHeader = document.createElement("div")
+    modalHeader.classList = "modal-header"
+    let modalH5 = document.createElement("h5")
+    modalH5.classList = "modal-title"
+    modalH5.id = "exampleModalLabel"
+    modalH5.innerText = project.category_title
+    modalHeader.append(modalH5)
+    let modalButton = document.createElement("button")
+    modalButton.setAttribute("type", "button")
+    modalButton.classList = "close"
+    modalButton.setAttribute("data-dismiss", "modal")
+    modalButton.setAttribute("aria-label", "Close")
+    let modalSpan = document.createElement("span")
+    modalSpan.setAttribute("aria-hidden", "true")
+    modalSpan.innerHTML = "&times;"
+    modalButton.append(modalSpan)
+    modalHeader.append(modalButton)
+    let modalBody = document.createElement("div")
+    modalBody.classList = "modal-body"
+
+    let bodySection = document.createElement("section")
+    bodySection.classList = "blog-wrapper"
+    bodySection.id = "blog"
+    let bodyDiv = document.createElement("div")
+    bodyDiv.classList = "container"
+    let bodyPost = document.createElement("div")
+    bodyPost.classList = "post-meta"
+    let posth1 = document.createElement("h1")
+    posth1.classList = "article-title"
+    posth1.innerText = project.real_title
+    let postul = document.createElement("ul")
+    postul.classList = "text-left"
+    let postli = document.createElement("li")
+    let posta = document.createElement("a")
+    posta.setAttribute("target", "_blank")
+    posta.setAttribute("href", project.demo_link)
+    posta.innerText = project.link_name
+    postli.append(posta)
+    postul.append(postli)
+    bodyPost.append(posth1)
+    bodyPost.append(postul)
+    bodyDiv.append(bodyPost)
+    let detailsUl = document.createElement("ul")
+    detailsUl.classList = "text-left"
+    let description = "";
+    for (i = 0; i < project.long_description.length; i++) {
+      description += "<li>" + project.long_description[i] + "</li>"
+    }
+    detailsUl.innerHTML = description
+
+    bodySection.append(bodyDiv)
+    bodySection.append(detailsUl)
+
+    let carousel_pictures1 = document.createElement("div")
+    carousel_pictures1.classList = "project-carousel owl-carousel owl-theme"
+
+    for (let pic in project.pictures) {
+      let carousel_work1 = document.createElement("div")
+      carousel_work1.classList = "work-box"
+      let carousel_a1 = document.createElement("a")
+      carousel_a1.setAttribute("data-fancybox", "gallery")
+      carousel_a1.setAttribute("data-src", project.pictures[pic])
+      let carousel_div_img1 = document.createElement("div")
+      carousel_div_img1.classList = "work-img"
+      let carousel_img1 = document.createElement("img")
+      carousel_img1.src = project.pictures[pic]
+      carousel_img1.classList = "img-fluid largerAspect"
+      carousel_div_img1.append(carousel_img1)
+      carousel_a1.append(carousel_div_img1)
+      carousel_work1.append(carousel_a1)
+      carousel_pictures1.append(carousel_work1)
+    }
+
+    modalBody.append(bodySection)
+    modalBody.append(carousel_pictures1)
+
+    let modalFoot = document.createElement("div")
+    modalFoot.classList = "modal-footer"
+    let footBotton = document.createElement("button")
+    footBotton.setAttribute("type", "button")
+    footBotton.classList = "btn btn-secondary"
+    footBotton.setAttribute("data-dismiss", "modal")
+    footBotton.innerText = "Close"
+    modalFoot.append(footBotton)
+    modalContent.append(modalHeader)
+    modalContent.append(modalBody)
+    modalContent.append(modalFoot)
+    modalDialog.append(modalContent)
+    modalDiv.append(modalDialog)
+    // Modal End
+
+    workDiv.append(modalDiv)
 
     firstDiv.append(workDiv)
 
     projs.append(firstDiv)
-
-    count += 1;
   })
 }
 

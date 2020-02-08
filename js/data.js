@@ -180,12 +180,13 @@ const projects = [
     link_name: "Live Application",
     demo_link: "https://capitaloneses2020.herokuapp.com/",
     site: "",
-    long_description: ["Developed app that helps users maximize cash back rewards by selecting the best credit card to use based on geographic location/store type and current cashback rewards rotation", "<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "<img width='100%' src='https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png'>", "<img width='100%' src='https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png'>"],
+    long_description: ["<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Developed app that helps users maximize cash back rewards by selecting the best credit card to use based on geographic location/store type and current cashback rewards rotation", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers"],
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
     date: "October 2020",
 
+    tab_name: "maxback",
     categories: "Web Python",
-    pictures: ["https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2012.02.45%20PM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png"],
+    pictures: ["https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2012.02.45%20PM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f"],
   },
   {
     head_image: "https://img.icons8.com/plasticine/100/000000/questions.png",
@@ -198,6 +199,7 @@ const projects = [
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
     date: "October 2020",
 
+    tab_name: "triviame",
     categories: "Web Python",
     pictures: ["https://img.icons8.com/plasticine/100/000000/questions.png", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Features/overview.gif", "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/Journey/seventh.png"],
   },
@@ -212,6 +214,7 @@ const projects = [
     short_description: "Developed disability friendly application for those with vision impairments to navigate indepedently",
     date: "January 2019 - May 2019",
 
+    tab_name: "siteseer",
     categories: "Python Arduino iOS",
     pictures: ["https://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/Mini-Grant-1.jpg", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/FinalProjectSchedule.png?alt=media&token=2eec4879-1e62-4590-886b-2486f0896991", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/IMG_9416.jpg", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/flowchart.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/app_1.png", "https://github.com/kc3585/SiteSeer-EG1003/raw/master/Extras/youtubeLive.gif"],
   },
@@ -226,6 +229,7 @@ const projects = [
     short_description: "This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!",
     date: "March 2019",
 
+    tab_name: "parstagram",
     categories: "iOS",
     pictures: ["https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png", "https://github.com/kc3585/Parstagram/raw/master/insta2.gif", "https://github.com/kc3585/Parstagram/raw/master/insta.gif"],
   },
@@ -240,6 +244,7 @@ const projects = [
     short_description: "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture in NYU Holodeck Project",
     date: "May 2019 – August 2019",
 
+    tab_name: "tagx",
     categories: "Python iOS",
     pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tag_robot.png?alt=media&token=0ee6b808-c540-4348-adf7-c20b607a5d1a", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tag_ground.jpg?alt=media&token=edaf9801-bf64-4a8c-a15c-aaefbc8d6615", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tag_app.png?alt=media&token=4b1aca1e-fab5-4bd1-8b44-ce92123a039c", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tag_mqtt.png?alt=media&token=b90192bd-08fa-4887-b00b-5a55cd38e05f", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/tag_opitrack.png?alt=media&token=26e22e5e-e7f1-4142-9d78-9d36d6dfe395", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/srposter.png?alt=media&token=0ed60b14-97e0-413c-a55c-e2c8024cdcd9"],
   },
@@ -254,6 +259,7 @@ const projects = [
     short_description: "Utilized OpenCV to measure distance between upper and lower lips",
     date: "September 2019 - December 2019",
 
+    tab_name: "mouth",
     categories: "Python OpenCV",
     pictures: ["https://github.com/kevin-chen/tech-stack/blob/master/distance-opencv/Lip.jpg?raw=true", ],
   },
@@ -268,6 +274,7 @@ const projects = [
     short_description: "Bluetooth controlled car built with popsicle sticks and controlled by an app",
     date: "February 2018 – May 2018",
 
+    tab_name: "rccar",
     categories: "Arduino",
     pictures: ["https://github.com/kevin-chen/Arduino-Bluetooth-Car/blob/master/IMG_5796.jpg?raw=true", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/rc_Car.jpg?alt=media&token=2fd45920-abc1-4f37-a74f-29ebe9dcf3fe"],
   },
@@ -282,6 +289,7 @@ const projects = [
     short_description: "Side-scrolling game. Defend the base from zombies coming from the right. Players strategically place objects to help defend the base. Full game w/ start, help, game, and end screens",
     date: "April 2017 – June 2017",
 
+    tab_name: "pvz",
     categories: "Java",
     pictures: ["https://github.com/kevin-chen/Plants-Vs.-Zombies/blob/master/gamePlay.png?raw=true", "https://github.com/kevin-chen/Plants-Vs.-Zombies/raw/master/plants.gif"],
   },
@@ -296,6 +304,7 @@ const projects = [
     short_description: "Ping Pong Game on iOS App, Features: 2-Player and Computer",
     date: "December 2018",
 
+    tab_name: "pingpong",
     categories: "iOS",
     pictures: ["https://github.com/kevin-chen/Pong-iOS-App/blob/master/pong.gif?raw=true"],
   },
@@ -310,6 +319,7 @@ const projects = [
     short_description: "Final Project (Intro to Python) using Python's Turtle and Tkinter modules",
     date: "November 2018 - December 2018",
 
+    tab_name: "tictac",
     categories: "Python",
     pictures: ["https://github.com/kevin-chen/Tic-Tac-Toe/blob/master/tic-tac-toe.gif?raw=true"],
   },
@@ -324,6 +334,7 @@ const projects = [
     short_description: "The robot functions through remote control activity through Wi-Fi Direct. More importantly, the robot can autonomously function on its own through the camera, with color sensors and pictograph decryption. Additionally, it moves autonomously by placing a cube in the selected column based on the decryption.",
     date: "September 2016 - June 2018",
 
+    tab_name: "ftcrobotics",
     categories: "Java OpenCV",
     pictures: ["https://github.com/kevin-chen/Artificial-Intelligence-FTC-Robotics-12178/blob/master/robot.jpg?raw=true", "https://media-exp1.licdn.com/media-proxy/ext?w=600&h=800&f=n&hash=guWY6jFOSCLVBF5j%2BPxkk6QajDI%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjpecTafOCloEBEcCwJjQBkKu21STHhQ464LI7nKdx4jJfsLMH5agYUbhl4j3lK6w", "https://media-exp1.licdn.com/media-proxy/ext?w=800&h=600&f=n&hash=0uuW1wZsqHk9ln4KZDTKLN47nQU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjoLM-Ncbegp0AXenoDjQA7e-m1SWToE47uI4i8fY8k2MXhIZn5agYUbhl4j3lK6w"],
   },
@@ -341,6 +352,7 @@ const activities = [
     long_description: ["Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers", "Participated in soft-skills training and technical sessions in iOS, Android, Web Development, AWS, Bot Development, Hardware, and Machine Learning"],
     short_description: "Worked in a team of other NYU students to create a website for registration for HackNYU 2020 Hackathon",
     date: "October 2019 - Present",
+    tab_name: "hacknyu",
   },
   {
     head_image: "https://s18798.pcdn.co/vip/wp-content/uploads/sites/7678/2018/11/SelfDriveLogo-768x316.png",
@@ -352,6 +364,7 @@ const activities = [
     long_description: ["At its core, this project-based course aims to create research teams that will be at the forefront of designing and prototyping technological advances in the ever growing field of self-driving cars", "Perception Team involves learning and working with computer vision (Pytorch) to develop a working prototype of a self-driving vehicle", "This is a project that can involve quite diverse set of talents. We had a very humble start last year with a scrap golf cart and managed to win a very prestigious competition for autonomous vehicles. This exemplifies the potentials of team work at New York University."],
     short_description: "At its core, this project-based course aims to create research teams that will be at the forefront of designing and prototyping technological advances in the ever growing field of self-driving cars",
     date: "September 2019 - Present",
+    tab_name: "selfdrive",
   }
 ]
 
