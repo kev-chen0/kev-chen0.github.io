@@ -174,6 +174,21 @@ const experience = [
 // Project Info
 const projects = [
   {
+    head_image: "https://github.com/kevin-chen/SwiftUI-Tutorials/raw/master/calculator.png",
+    category_title: "SwiftUI Tutorials - Calculator App",
+    real_title: "iOS Calculator App",
+    link_name: "GitHub Project",
+    demo_link: "https://github.com/kevin-chen/SwiftUI-Tutorials",
+    site: "",
+    long_description: ["Learning SwiftUI through various tutorials", "Calculator App", "Maps UI"],
+    short_description: "",
+    date: "February 2020",
+
+    tab_name: "ioscalculator",
+    categories: "iOS",
+    pictures: ["https://github.com/kevin-chen/SwiftUI-Tutorials/raw/master/calculator.png", "https://github.com/kevin-chen/SwiftUI-Tutorials/raw/master/park-map.png"],
+  },
+  {
     head_image: "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png",
     category_title: "MaxBack",
     real_title: "Capital One Software Engineering Summit Hackathon",
