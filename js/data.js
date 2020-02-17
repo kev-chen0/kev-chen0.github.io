@@ -197,7 +197,7 @@ const projects = [
     site: "",
     long_description: ["<a target='_blank' href='https://github.com/kevin-chen/CapitalOne-SES-Hackathon'>Hackathon Project</a>", "<a target='_blank' href='https://docs.google.com/presentation/d/1V7vmx8XlHF_xF9rxd-3_x28iWT4014zT6cxX6pWawTs/edit?usp=sharing'>Presentation</a>", "Developed app that helps users maximize cash back rewards by selecting the best credit card to use based on geographic location/store type and current cashback rewards rotation", "Highly selective one-week technical program at Capital One headquarters", "Culminated in a rigorous hackathon and technical interview with Capital One engineers"],
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
-    date: "October 2020",
+    date: "January 2020",
 
     tab_name: "maxback",
     categories: "Web Python",
@@ -212,7 +212,7 @@ const projects = [
     site: "",
     long_description: ["Developed a web application for the Capital One Software Engineering Summit in Winter 2020", "Utilized HTML, CSS, Python/Django, and Javascript to develop a Jeopardy-style web application"],
     short_description: "Developed a web application for the Capital One Software Engineering Summit in Winter 2020",
-    date: "October 2020",
+    date: "October 2019",
 
     tab_name: "triviame",
     categories: "Web Python",
