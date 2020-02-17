@@ -283,3 +283,74 @@ function showTab(num) {
 }
 
 showTab(1);
+
+// Contact Form
+// Initialize Firebase (ADD YOUR OWN DATA)
+var firebaseconfig = {
+  apiKey: "AIzaSyCwDBt09-InBOhsO3FvAF5k9043avzUIuY",
+  authDomain: "web-port-folio.firebaseapp.com",
+  databaseURL: "https://web-port-folio.firebaseio.com",
+  projectId: "web-port-folio",
+  storageBucket: "web-port-folio.appspot.com",
+  messagingSenderId: "351464750374",
+  appId: "1:351464750374:web:47c4fce61adfff4d9655e7",
+  measurementId: "G-39D426YYGD"
+};
+firebase.initializeApp(firebaseconfig);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var subject = getInputVal('subject');
+  var message = getInputVal('message');
+
+  if(name != "" && email != "" && subject != "" && message != "")
+  {
+    // Save message
+    saveMessage(name, email, subject, message);
+
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
+    // Hide alert after 3 seconds
+    setTimeout(function(){
+      document.querySelector('.alert').style.display = 'none';
+    },3000);
+
+    // Clear form
+    document.getElementById('contactForm').reset();
+  }
+  else {
+    // Show alert
+    document.getElementById('messageerror').style.display = 'block';
+    // Hide alert after 3 seconds
+    setTimeout(function(){
+      document.getElementById('messageerror').style.display = 'none';
+    },3000);
+  }
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, subject, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email:email,
+    subject:subject,
+    message:message
+  });
+}
