@@ -28,26 +28,27 @@ exports.addMessage = functions.https.onRequest(async (req, res) => {
 
 // Listens for new messages added to /messages/:pushId/original and creates an
 // uppercase version of the message to /messages/:pushId/uppercase
-exports.makeUppercase = functions.database.ref('/messages/{pushId}/original')
-    .onCreate((snapshot, context) => {
+exports.makeUppercase = functions.database.ref('/messages')
+    .onUpdate((snapshot, context) => {
       // using Twilio SendGrid's v3 Node.js Library
       // https://github.com/sendgrid/sendgrid-nodejs
       console.log("Sending Grid")
+      console.log(context)
       sgMail.setApiKey('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');
       const msg = {
-        to: 'sweepcontest123@gmail.com',
-        from: 'test@example.com',
-        subject: 'Sending with Twilio SendGrid is Fun',
-        text: 'and easy to do anywhere, even with Node.js',
-        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+        to: 'kchen0503@gmail.com',
+        from: 'Website@example.com',
+        subject: "New Message on Website",
+        text: 'New Message',
       };
       sgMail.send(msg);
-      // Grab the current value of what was written to the Realtime Database.
-      const original = snapshot.val();
-      console.log('Uppercasing', context.params.pushId, original);
-      const uppercase = original.toUpperCase();
-      // You must return a Promise when performing asynchronous tasks inside a Functions such as
-      // writing to the Firebase Realtime Database.
-      // Setting an "uppercase" sibling in the Realtime Database returns a Promise.
-      return snapshot.ref.parent.child('uppercase').set(uppercase);
+      return 0;
+          // // Grab the current value of what was written to the Realtime Database.
+          // const original = snapshot.val();
+          // console.log('Uppercasing', context.params.pushId, original);
+          // const uppercase = original.toUpperCase();
+          // // You must return a Promise when performing asynchronous tasks inside a Functions such as
+          // // writing to the Firebase Realtime Database.
+          // // Setting an "uppercase" sibling in the Realtime Database returns a Promise.
+          // return snapshot.ref.parent.child('uppercase').set(uppercase);
     });
