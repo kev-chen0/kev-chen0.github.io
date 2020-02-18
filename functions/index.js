@@ -33,13 +33,16 @@ exports.makeUppercase = functions.database.ref('/messages')
       // using Twilio SendGrid's v3 Node.js Library
       // https://github.com/sendgrid/sendgrid-nodejs
       console.log("Sending Grid")
-      console.log(context)
+      // console.log(context)
+      // console.log(snapshot)
       sgMail.setApiKey('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');
+      // const id = await admin.database().ref('/messages').get('newMessageId');
+      // console.log(id)
       const msg = {
         to: 'kchen0503@gmail.com',
-        from: 'Website@example.com',
+        from: 'firebase@kev-chen.me',
         subject: "New Message on Website",
-        text: 'Hello Sir, there is a new message on your awesome website',
+        text: 'Hello, there is a new message on your website',
       };
       sgMail.send(msg);
       return 0;
