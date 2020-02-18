@@ -39,7 +39,7 @@ exports.makeUppercase = functions.database.ref('/messages')
         to: 'kchen0503@gmail.com',
         from: 'Website@example.com',
         subject: "New Message on Website",
-        text: 'New Message',
+        text: 'Hello Sir, there is a new message on your awesome website',
       };
       sgMail.send(msg);
       return 0;
