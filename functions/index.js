@@ -17,22 +17,24 @@ admin.initializeApp();
 
 // Take the text parameter passed to this HTTP endpoint and insert it into the
 // Realtime Database under the path /messages/:pushId/original
-exports.addMessage = functions.https.onRequest(async (req, res) => {
-  // Grab the text parameter.
-  const original = req.query.text;
-  // Push the new message into the Realtime Database using the Firebase Admin SDK.
-  const snapshot = await admin.database().ref('/messages').push({original: original});
-  // Redirect with 303 SEE OTHER to the URL of the pushed object in the Firebase console.
-  res.redirect(303, snapshot.ref.toString());
-});
+// exports.addMessage = functions.https.onRequest(async (req, res) => {
+//   // Grab the text parameter.
+//   const original = req.query.text;
+//   // Push the new message into the Realtime Database using the Firebase Admin SDK.
+//   const snapshot = await admin.database().ref('/messages').push({original: original});
+//   // Redirect with 303 SEE OTHER to the URL of the pushed object in the Firebase console.
+//   res.redirect(303, snapshot.ref.toString());
+// });
 
 // Listens for new messages added to /messages/:pushId/original and creates an
 // uppercase version of the message to /messages/:pushId/uppercase
-exports.makeUppercase = functions.database.ref('/messages')
-    .onUpdate((snapshot, context) => {
+exports.sendEmail = functions.database.ref('/messages/{messageId}')
+    .onCreate((snap, context) => {
+      let newData = snap.val()
+      console.log(newData)
       // using Twilio SendGrid's v3 Node.js Library
       // https://github.com/sendgrid/sendgrid-nodejs
-      console.log("Sending Grid")
+      // console.log("Sending Grid")
       // console.log(context)
       // console.log(snapshot)
       sgMail.setApiKey('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');
@@ -40,9 +42,14 @@ exports.makeUppercase = functions.database.ref('/messages')
       // console.log(id)
       const msg = {
         to: 'kchen0503@gmail.com',
-        from: 'firebase@kev-chen.me',
-        subject: "New Message on Website",
-        text: 'Hello, there is a new message on your website',
+        from: 'webmaster@kev-chen.me',
+        templateId: 'd-be3df185e685405e9944d4a17bf83c7c',
+        dynamic_template_data: {
+          subject: 'New Website Message: ' + newData['subject'],
+          email:  newData['email'],
+          name: newData['name'],
+          text: newData['message']
+        }
       };
       sgMail.send(msg);
       return 0;
