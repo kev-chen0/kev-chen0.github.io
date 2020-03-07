@@ -265,7 +265,12 @@ ul {
 }
 .testimonial-box:hover{ }
 
-@media (max-width: 577px) {
+.fancybox-slide--iframe .fancybox-content {
+    max-height : 80%;
+    margin: 0;
+}
+
+/* @media (max-width: 577px) {
   .fancybox-slide--iframe .fancybox-content {
       max-height : 80%;
       margin: 0;
@@ -282,7 +287,7 @@ ul {
       max-height : 70%;
       margin: 0;
   }
-}
+} */
 
 body {
   background-color: #FDFDFD;
