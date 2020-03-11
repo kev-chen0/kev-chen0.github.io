@@ -1,3 +1,8 @@
+// Portfolio Info
+const portfolios = [
+
+]
+
 // Skills Info
 const skills = [
   {
@@ -31,7 +36,7 @@ const skills = [
     subtitle: "Experienced with Swift in developing iOS applications for personal projects and bootcamp course"
   },
   {
-    img: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/super_cloud.png",
+    img: "https://cloud.google.com/images/social-icon-google-cloud-1200-630.png",
     title: "Google Cloud",
     subtitle: "Experienced with Google Cloud services such as App Engine, Firebase, AutoVision ML, Storage, Maps API, and Speech Services"
   },
@@ -386,7 +391,7 @@ const activities = [
 // Awards Info
 const awards = [
   {
-    head_image: "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png",
+    head_image: "https://cloud.google.com/images/social-icon-google-cloud-1200-630.png",
     category_title: "TechFestival Hackathon",
     real_title: "Hackathon",
     link_name: "April 2019",

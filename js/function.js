@@ -171,6 +171,23 @@ $(document).ready(function() {
     });
 
 
+  // Project owl
+  $('#portfolio-cont').owlCarousel({
+		margin: 20,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+	});
+
 	/*--/ Experience owl /--*/
 	$('#job-cont').owlCarousel({
 		margin: 20,
