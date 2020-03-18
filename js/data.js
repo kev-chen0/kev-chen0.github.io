@@ -11,11 +11,6 @@ const skills = [
     subtitle: "Experienced with Python utilized in multiple projects implementing APIs, OpenCV, Django, and Multi-Threading"
   },
   {
-    img: "https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png",
-    title: "Django",
-    subtitle: "Utilized Django and Flask for web applications such as trivia and to-do list"
-  },
-  {
     img: "https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
     title: "HTML/CSS",
     subtitle: "Familiar with HTML & CSS to develop personal website and web applications"
@@ -34,6 +29,46 @@ const skills = [
     img: "https://apprendre-a-coder.com/wp/wp-content/uploads/2019/01/swift.png",
     title: "Swift",
     subtitle: "Experienced with Swift in developing iOS applications for personal projects and bootcamp course"
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png",
+    title: "Django",
+    subtitle: "Utilized Django and Flask for web applications such as trivia and to-do list"
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    title: "React",
+    subtitle: "Utilized React for personal projects such as exercise tracker"
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+    title: "Node.js",
+    subtitle: "Utilized Node.js to develop backend for MongoDB API"
+  },
+  {
+    img: "https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
+    title: "MongoDB",
+    subtitle: "Utilized MongoDB as database for exercise tracker project"
+  },
+  {
+    img: "https://miro.medium.com/max/766/1*uPL1uCtLBRSk6akPL2hNzg.jpeg",
+    title: "Express",
+    subtitle: "Utilized Express in Node.js backend projects to route url"
+  },
+  {
+    img: "https://miro.medium.com/max/4000/0*4Z6mwORGhtSAgeQ2.png",
+    title: "TensorFlow",
+    subtitle: "Utilized TensorFlow to develop web app image classifer"
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png",
+    title: "OpenCV",
+    subtitle: "Utilized OpenCV in Python to develop face recognition for live feeds"
+  },
+  {
+    img: "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461122387heroku-logo.jpg",
+    title: "Heroku",
+    subtitle: "Utilized Heroku in multiple apps to host projects and append custom domains"
   },
   {
     img: "https://cloud.google.com/images/social-icon-google-cloud-1200-630.png",
@@ -106,28 +141,13 @@ const experience = [
     link_name: "Technology Intern Program",
     demo_link: "https://campus.capitalone.com/technology-program?id=internship",
     site: "",
-    long_description: ["Attended selective one-week program at Capital One headquarters, January 2020"],
+    long_description: ["Attended selective one-week program at Capital One headquarters, January 2020", "Change banking for good by collaborating with software engineers to revitalize banking experience"],
     short_description: "",
     date: "June 2020 - Present",
 
     tab_name: "capitalone",
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
     pictures: [],
-  },
-  {
-    head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
-    category_title: "Teaching Assistant",
-    real_title: "Engineering & Design",
-    link_name: "EG1003 Course",
-    demo_link: "https://eg.poly.edu/staffimages.php?staff=ta",
-    site: "",
-    long_description: ["Work with students in first year engineering course", "Mentor first-year students in semester-long design projects for introductory cornerstone engineering course, EG1003 Intro to Engineering and Design", "Teach basic engineering concepts such as micro-controllers, digital logic, CAD, etc."],
-    short_description: "Work with students in first year engineering course",
-    date: "September 2019 - Present",
-
-    tab_name: "eg1003",
-    logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
-    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4", "https://manual.eg.poly.edu/images/thumb/9/9b/BDR_Course1-1-.jpg/1200px-BDR_Course1-1-.jpg", "https://manual.eg.poly.edu/images/c/c2/Labelled-mrr-super-correct.jpg"],
   },
   {
     head_image: "https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg",
@@ -143,6 +163,21 @@ const experience = [
     tab_name: "nyux",
     logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80",
     pictures: ["https://nyunews.com/wp-content/uploads/2018/11/Jun-Chen-via-nyu.edu_.jpg", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80"],
+  },
+  {
+    head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
+    category_title: "Teaching Assistant",
+    real_title: "General Engineering Department",
+    link_name: "EG1003 Course",
+    demo_link: "https://eg.poly.edu/staffimages.php?staff=ta",
+    site: "",
+    long_description: ["Work with students in first year engineering course", "Mentor first-year students in semester-long design projects for introductory cornerstone engineering course, EG1003 Intro to Engineering and Design", "Teach basic engineering concepts such as micro-controllers, digital logic, CAD, etc."],
+    short_description: "Work with students in first year engineering course",
+    date: "September 2019 - Present",
+
+    tab_name: "eg1003",
+    logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4", "https://manual.eg.poly.edu/images/thumb/9/9b/BDR_Course1-1-.jpg/1200px-BDR_Course1-1-.jpg", "https://manual.eg.poly.edu/images/c/c2/Labelled-mrr-super-correct.jpg"],
   },
   {
     head_image: "https://cd.foundation/wp-content/uploads/sites/78/2019/08/Logo-JPMorgan-Chase-2018.png",
