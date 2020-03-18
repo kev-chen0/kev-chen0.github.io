@@ -167,7 +167,7 @@ const experience = [
   {
     head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/eg_logo.png?alt=media&token=01819bd3-8b24-410f-bcea-1a06e2c699f4",
     category_title: "Teaching Assistant",
-    real_title: "General Engineering Department",
+    real_title: "General Engineering",
     link_name: "EG1003 Course",
     demo_link: "https://eg.poly.edu/staffimages.php?staff=ta",
     site: "",
