@@ -12,6 +12,13 @@
 
 /* Added */
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 ul {
   line-height:180%
 }
