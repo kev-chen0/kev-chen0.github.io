@@ -148,7 +148,7 @@ const experience = [
     site: "",
     long_description: ["Attended selective one-week program at Capital One headquarters, January 2020", "Change banking for good by collaborating with software engineers to revitalize banking experience"],
     short_description: "",
-    date: "May 2020 - Present",
+    date: "January 2020 - Present",
 
     tab_name: "capitalone",
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
