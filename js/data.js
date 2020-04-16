@@ -31,6 +31,11 @@ const skills = [
     subtitle: "Experienced with Swift in developing iOS applications for personal projects and bootcamp course"
   },
   {
+    img: "https://www.xilinx.com/products/boards-and-kits/kcu105/_jcr_content/root/parsys/xilinxtabs2/childParsys-hardware/xilinxcolumns_872938206/childParsys-2/xilinxincludedproduc_237119251.img.jpg/1509402235715.jpg",
+    title: "Verilog",
+    subtitle: "Utilized Verilog for hardware and MIPS assembly programming"
+  },
+  {
     img: "https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png",
     title: "Django",
     subtitle: "Utilized Django and Flask for web applications such as trivia and to-do list"
@@ -136,14 +141,14 @@ const skills = [
 const experience = [
   {
     head_image: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
-    category_title: "Incoming Software Engineering Intern",
+    category_title: "Software Engineering Intern",
     real_title: "Capital One",
     link_name: "Technology Intern Program",
     demo_link: "https://campus.capitalone.com/technology-program?id=internship",
     site: "",
     long_description: ["Attended selective one-week program at Capital One headquarters, January 2020", "Change banking for good by collaborating with software engineers to revitalize banking experience"],
     short_description: "",
-    date: "June 2020 - Present",
+    date: "May 2020 - Present",
 
     tab_name: "capitalone",
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
