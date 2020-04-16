@@ -43,9 +43,10 @@ exports.sendEmail = functions.database.ref('/messages/{messageId}')
       const msg = {
         to: 'kchen0503@gmail.com',
         from: newData['email'],
+        fromname: newData['name'],
         templateId: 'd-be3df185e685405e9944d4a17bf83c7c',
         dynamic_template_data: {
-          subject: 'New Website Message: ' + newData['subject'],
+          subject: '* New Message: ' + newData['subject'],
           email:  newData['email'],
           name: newData['name'],
           text: newData['message']
