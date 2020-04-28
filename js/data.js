@@ -1,6 +1,9 @@
 // Portfolio Info
 const portfolios = [
-
+    '<iframe width="100%" height="600" src="https://www.youtube.com/embed/WR3HkmROxYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    '<embed src= "https://drive.google.com/file/d/1mgdCk0yXF2Kuy028lika3NxHvgnxBdtq/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
+    '<embed src= "https://drive.google.com/file/d/1uxn3JWF7ZZWoX7MoqKBpnFCREhwJBIhO/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
+    '<embed src= "https://drive.google.com/file/d/1-YbamvN9TD4dLo9R_4F3aR4dtqd8kg2_/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
 ]
 
 // Skills Info

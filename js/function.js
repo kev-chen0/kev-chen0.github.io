@@ -134,6 +134,18 @@ $(document).ready(function() {
 		});
 	}
 
+    // Portfolio
+    $('.portfolio-carousel').owlCarousel({
+        autoplay: false,
+        autoplayTimeout: 2000,
+    		autoplayHoverPause: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsiveClass: true,
+        responsive: { 0: { items: 1 } }
+      });
+
   // Experience
   $('.experience-carousel').owlCarousel({
       autoplay: true,

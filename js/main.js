@@ -10,6 +10,16 @@ const awardCont = document.getElementById("awards-cont")
 const summitCont = document.getElementById("summit-cont")
 const footerCont = document.getElementById("wrapper")
 
+// Loading Portfolio
+const loadPortfolio = (list) => {
+  list.map(port => {
+      var doc = new DOMParser().parseFromString(port, "text/xml");
+      var wrapper= document.createElement('div');
+      wrapper.innerHTML= port;
+      portfolio.append(wrapper)
+  })
+}
+
 // Modal Maker
 function createModal(project) {
   // Add to Wrapper
@@ -121,66 +131,6 @@ function createModal(project) {
   return modalDiv
 }
 
-// Loading Portfolio
-const loadPortfolio = (list) => {
-  list.map(portfolio => {
-    let testimonial_div = document.createElement("div")
-    testimonial_div.classList = "testimonial-box"
-
-    let a_tag = document.createElement("a")
-
-    if (award.site != "") {
-      a_tag.setAttribute("data-fancybox", "")
-      a_tag.setAttribute("data-type", "iframe")
-      a_tag.setAttribute("data-src", award.site)
-    }
-    else {
-      testimonial_div.setAttribute("data-toggle", "modal")
-      testimonial_div.setAttribute("data-target", "#" + award.tab_name)
-    }
-
-		let author_div = document.createElement("div")
-		let award_img = document.createElement("img")
-		let name_span = document.createElement("span")
-		author_div.classList = "author-test"
-		award_img.classList = "b-shadow-a"
-		award_img.src = award.head_image
-		award_img.width = "100"
-		award_img.height = "100"
-		name_span.classList = "author"
-		name_span.innerText = award.category_title
-		author_div.append(award_img)
-		author_div.append(name_span)
-
-    let date_p = document.createElement("p")
-    date_p.innerText = award.date
-    date_p.classList = "description lead"
-
-		let content_div = document.createElement("div")
-		let description_p = document.createElement("p")
-		let sub_icon_span = document.createElement("span")
-		let i_tag = document.createElement("i")
-		description_p.classList = "description lead"
-		description_p.innerText = award.short_description
-		sub_icon_span.classList = "comit"
-		i_tag.classList = "fa fa-trophy"
-		sub_icon_span.append(i_tag)
-    content_div.append(date_p)
-		content_div.append(description_p)
-		content_div.append(sub_icon_span)
-
-		testimonial_div.append(author_div)
-		testimonial_div.append(content_div)
-
-    let modalDiv = createModal(award)
-
-    a_tag.append(testimonial_div)
-
-		awardCont.append(a_tag)
-    footerCont.append(modalDiv)
-  })
-}
-
 // Loading skills
 const loadSkills = (list) => {
   list.map(skill => {
@@ -213,11 +163,11 @@ const loadSkills = (list) => {
     subtitle_h.innerText = skill.subtitle
     content_div.append(subtitle_h)
 
-		service_div.append(circle_div)
-		service_div.append(content_div)
-		outer_div.append(service_div)
+	service_div.append(circle_div)
+	service_div.append(content_div)
+	outer_div.append(service_div)
 
-		expertise.append(outer_div)
+	expertise.append(outer_div)
   })
 }
 
@@ -601,7 +551,7 @@ const loadSummits = (list) => {
 
 // Main Call
 const main = () => {
-  // loadPortfolio(portfolios)
+  loadPortfolio(portfolios)
   loadSkills(skills)
   loadJobs(experience)
   loadProjects(projects)
