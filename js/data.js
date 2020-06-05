@@ -79,6 +79,11 @@ const skills = [
     subtitle: "Utilized Heroku in multiple apps to host projects and append custom domains"
   },
   {
+    img: "https://a.slack-edge.com/80588/img/services/jenkins-ci_512.png",
+    title: "Jenkins",
+    subtitle: "Utilized Jenkins to implement deployement success on various projects"
+  },
+  {
     img: "https://cloud.google.com/images/social-icon-google-cloud-1200-630.png",
     title: "Google Cloud",
     subtitle: "Experienced with Google Cloud services such as App Engine, Firebase, AutoVision ML, Storage, Maps API, and Speech Services"
