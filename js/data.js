@@ -34,6 +34,11 @@ const skills = [
     subtitle: "Experienced with Swift in developing iOS applications for personal projects and bootcamp course"
   },
   {
+    img: "https://angular.io/assets/images/logos/angular/angular.png",
+    title: "Angular",
+    subtitle: "Utilized Angular at Capital One for internship project"
+  },
+  {
     img: "https://www.xilinx.com/products/boards-and-kits/kcu105/_jcr_content/root/parsys/xilinxtabs2/childParsys-hardware/xilinxcolumns_872938206/childParsys-2/xilinxincludedproduc_237119251.img.jpg/1509402235715.jpg",
     title: "Verilog",
     subtitle: "Utilized Verilog for hardware and MIPS assembly programming"
@@ -116,7 +121,12 @@ const skills = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
     title: "AWS",
-    subtitle: "Familiar with services such as IoT MQTT and Alexa"
+    subtitle: "Experience with serverless services such as Lambda, DynamoDB, API Gateway, IoT MQTT, and Alexa"
+  },
+  {
+    img: "https://i.pcmag.com/imagery/reviews/03ET1vJXgWnmfrLZ7g542br-5.fit_scale.size_1028x578.v_1569475368.jpg",
+    title: "Tableau",
+    subtitle: "Utilized Tableau for data visualization at Capital One"
   },
   {
     img: "https://www.linuxjournal.com/sites/default/files/styles/360_250/public/nodeimage/story/bash-icon_0.png?itok=JZG6p4sq",
@@ -156,7 +166,7 @@ const experience = [
     site: "",
     long_description: ["Attended selective one-week program at Capital One headquarters, January 2020", "Change banking for good by collaborating with software engineers to revitalize banking experience"],
     short_description: "",
-    date: "January 2020 - Present",
+    date: "June 2020 - Present",
 
     tab_name: "capitalone",
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
