@@ -164,7 +164,7 @@ const experience = [
     link_name: "Technology Intern Program",
     demo_link: "https://campus.capitalone.com/technology-program?id=internship",
     site: "",
-    long_description: ["Attended selective one-week program at Capital One headquarters, January 2020", "Change banking for good by collaborating with software engineers to revitalize banking experience"],
+    long_description: ["Developed an internal metrics & reporting tool and brand portal from scratch for company’s new line of business, HR Tech with over a 100 associates", "Utilized Angular, Tableau, Git, Jira, Omnigraffle in agile fashion to accomplish software deliverables"],
     short_description: "",
     date: "June 2020 - Present",
 
@@ -509,5 +509,21 @@ const summits = [
     company: "Capital One",
     tab_name: "c1summit",
     pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_group.JPG?alt=media&token=022072c2-73be-4abb-b292-741f0bba6d6f", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/summit_hackathon.JPG?alt=media&token=81f0b110-6e45-4f40-9bd3-1a6607fe659f", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.48.01%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.11%20AM.png", "https://github.com/kevin-chen/CapitalOne-SES-Hackathon/raw/master/Screen%20Shot%202020-01-13%20at%2011.51.21%20AM.png", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/change_banking_for_good.jpg?alt=media&token=53876fbd-39de-429e-9e95-7ad011d7f4e1"],
+  },
+  {
+    head_image: "https://miro.medium.com/max/2800/0*P8Szgdz2BVwcMFjP",
+    category_title: "Impact Labs Summit",
+    real_title: "Summit",
+    link_name: "Impact Summit",
+    demo_link: "https://www.impactlabs.io/summit/",
+    site: "",
+    long_description: ["The Impact Summit unites young people who are passionate about technology and social good, while connecting them with entrepreneurs, civic activists, and thought leaders who are leveraging technology for social impact.", "​In addition to creating a strong community of students and professionals passionate about technology and social good, the summit provides an opportunity for students to find meaningful career opportunities and ignite the ideas that will create a more equitable, sustainable world!"],
+    short_description: "The Impact Summit unites young people who are passionate about technology and social good, while connecting them with entrepreneurs, civic activists, and thought leaders who are leveraging technology for social impact.",
+    date: "August 2020",
+
+    logo: "https://www.impactlabs.io/assets/impact_labs.jpg",
+    company: "Impact Labs",
+    tab_name: "impactsummit",
+    pictures: [],
   }
 ]
