@@ -249,6 +249,23 @@ $(document).ready(function() {
     nav    : true,
     smartSpeed :900,
     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+  });
+  
+  /*--/ Certification owl /--*/
+	$('#certs-cont').owlCarousel({
+		margin: 20,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		loop: false,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		},
+    nav    : true,
+    smartSpeed :900,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 	});
 
 	/*--/ Summit owl /--*/

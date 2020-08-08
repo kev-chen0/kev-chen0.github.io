@@ -7,6 +7,7 @@ const jobsContent = document.getElementById("v-pills-tabContent")
 const projs = document.getElementById("project-cont")
 const activity = document.getElementById("activities-cont")
 const awardCont = document.getElementById("awards-cont")
+const certsCont = document.getElementById("certs-cont")
 const summitCont = document.getElementById("summit-cont")
 const footerCont = document.getElementById("wrapper")
 
@@ -488,6 +489,64 @@ const loadAwards = (list) => {
   })
 }
 
+const loadCertifications = (list) => {
+	list.map(cert => {
+    let testimonial_div = document.createElement("div")
+    testimonial_div.classList = "testimonial-box"
+
+    let a_tag = document.createElement("a")
+
+    if (cert.site != "") {
+      a_tag.setAttribute("data-fancybox", "")
+      a_tag.setAttribute("data-type", "iframe")
+      a_tag.setAttribute("data-src", cert.site)
+    }
+    else {
+      testimonial_div.setAttribute("data-toggle", "modal")
+      testimonial_div.setAttribute("data-target", "#" + cert.tab_name)
+    }
+
+		let author_div = document.createElement("div")
+		let award_img = document.createElement("img")
+		let name_span = document.createElement("span")
+		author_div.classList = "author-test"
+		award_img.classList = "b-shadow-a"
+		award_img.src = cert.logo
+		award_img.width = "100"
+		award_img.height = "100"
+		name_span.classList = "author"
+		name_span.innerText = cert.category_title
+		author_div.append(award_img)
+		author_div.append(name_span)
+
+		let content_div = document.createElement("div")
+		let description_p = document.createElement("p")
+		let sub_icon_span = document.createElement("span")
+		let i_tag = document.createElement("i")
+		description_p.classList = "description lead"
+		description_p.innerText =  cert.date
+		sub_icon_span.classList = "comit"
+		i_tag.classList = "fa fa-briefcase"
+
+    let info_p = document.createElement("p")
+    info_p.classList = "description lead"
+		info_p.innerText = cert.short_description
+
+		sub_icon_span.append(i_tag)
+		content_div.append(description_p)
+    content_div.append(info_p)
+		content_div.append(sub_icon_span)
+
+		testimonial_div.append(author_div)
+		testimonial_div.append(content_div)
+
+    a_tag.append(testimonial_div)
+
+		certsCont.append(a_tag)
+
+	})
+}
+
 const loadSummits = (list) => {
 	list.map(summit => {
     let testimonial_div = document.createElement("div")
@@ -558,6 +617,7 @@ const main = () => {
   loadActivities(activities)
   loadAwards(awards)
   loadSummits(summits)
+  loadCertifications(certifications)
 }
 
 main();

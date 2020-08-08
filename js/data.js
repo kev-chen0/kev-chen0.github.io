@@ -94,7 +94,7 @@ const skills = [
     subtitle: "Experienced with Google Cloud services such as App Engine, Firebase, AutoVision ML, Storage, Maps API, and Speech Services"
   },
   {
-    img: "https://www.londonappbrewery.com/wp-content/uploads/2015/09/xcode-development-icon.png",
+    img: "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/ca/72/ba/ca72ba99-f72f-4210-0da5-47587ab10ac4/Xcode-85-220-0-4-2x.png/1200x630bb.png",
     title: "iOS App Development",
     subtitle: "Experienced with iOS services such as Apple Speech Recognition and CoreML"
   },
@@ -490,6 +490,19 @@ const awards = [
 
     pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_robot_win.jpg?alt=media&token=41032364-eec3-44a4-b21a-55d9a0822894", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/robot.jpg?alt=media&token=bb345d35-f755-4bdb-a572-919ca0081353", "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/ftc_12178.jpg?alt=media&token=44fca2cc-451f-4557-9bd5-64775c892cc7"],
   }
+]
+
+// Certification Info
+const certifications = [
+  {
+    logo: "https://pbs.twimg.com/profile_images/1067796091460931584/3LHpiCyf.jpg",
+    category_title: "CodePath iOS Bootcamp",
+    date: "Spring 2019",
+    short_description: "Joined iOS Bootcamp during Spring 2019 semester consisting of projects such as mock Instagram app",
+
+    tab_name: "codepath",
+    site: ""
+  },
 ]
 
 // Summit Info
