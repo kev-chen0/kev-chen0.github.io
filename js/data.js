@@ -164,7 +164,7 @@ const experience = [
     link_name: "Technology Intern Program",
     demo_link: "https://campus.capitalone.com/technology-program?id=internship",
     site: "",
-    long_description: ["Developed an internal metrics & reporting tool and brand portal from scratch for company’s new line of business, HR Tech with over a 100 associates", "Utilized Angular, Tableau, Git, Jira, Omnigraffle in agile fashion to accomplish software deliverables"],
+    long_description: ["Established first internal web presence for HR Tech using Angular & AWS by developing new brand portal", "Utilized Angular, Tableau, Git, Jira, Omnigraffle in agile fashion to accomplish software deliverables"],
     short_description: "",
     date: "June 2020 - Present",
 
@@ -181,7 +181,7 @@ const experience = [
     site: "",
     long_description: ["Research Poster Link~https://drive.google.com/file/d/1zrOeFhpE9dras_V5jy0ven2E1ugefBr-/view", "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output", " Collaborated with investigators in NSF-funded research project to develop robotic learning system using OptiTrack, Python, iOS application, and MQTT broker, in collaboration with the NYU Holodeck Project", "Developed functioning interface for robotic-assisted geometry system using Python & MQTT by designing iOS mobile application and integrating RabbitMQ and OptiTrack Motion Capture at NYU-X lab"],
     short_description: "Worked on NYU Holodeck Project to create an immersive, collaborative, virtual/ physical research environment providing unparalleled tools for research collaborations, intellectual exploration, and creative output",
-    date: "May 2019 - August 2019",
+    date: "June 2019 - August 2019",
 
     tab_name: "nyux",
     logo: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/nyu-x.png?alt=media&token=9a7b610d-8427-4df9-9971-669517f45a80",
