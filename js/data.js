@@ -126,7 +126,7 @@ const skills = [
   {
     img: "https://i.pcmag.com/imagery/reviews/03ET1vJXgWnmfrLZ7g542br-5.fit_scale.size_1028x578.v_1569475368.jpg",
     title: "Tableau",
-    subtitle: "Utilized Tableau for data visualization at Capital One"
+    subtitle: "Utilized Tableau for data visualization for internship at Capital One"
   },
   {
     img: "https://www.linuxjournal.com/sites/default/files/styles/360_250/public/nodeimage/story/bash-icon_0.png?itok=JZG6p4sq",
