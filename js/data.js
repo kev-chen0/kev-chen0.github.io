@@ -69,6 +69,16 @@ const skills = [
     subtitle: "Utilized Express in Node.js backend projects to route url"
   },
   {
+    img: "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png",
+    title: "Docker",
+    subtitle: ""
+  },
+  {
+    img: "https://kubernetes.io/images/favicon.png",
+    title: "Kubernetes",
+    subtitle: ""
+  },
+  {
     img: "https://miro.medium.com/max/4000/0*4Z6mwORGhtSAgeQ2.png",
     title: "TensorFlow",
     subtitle: "Utilized TensorFlow to develop web app image classifer"
