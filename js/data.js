@@ -544,7 +544,7 @@ const summits = [
     short_description: "The Impact Summit unites young people who are passionate about technology and social good, while connecting them with entrepreneurs, civic activists, and thought leaders who are leveraging technology for social impact.",
     date: "August 2020",
 
-    logo: "https://www.impactlabs.io/assets/impact_labs.jpg",
+    logo: "https://impactlabs.io/assets/images/impact_labs.jpg",
     company: "Impact Labs",
     tab_name: "impactsummit",
     pictures: [],
