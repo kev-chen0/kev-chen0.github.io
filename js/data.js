@@ -1,7 +1,6 @@
 // Portfolio Info
 const portfolios = [
     '<iframe width="100%" height="600" src="https://www.youtube.com/embed/WR3HkmROxYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    '<embed src= "https://drive.google.com/file/d/1mgdCk0yXF2Kuy028lika3NxHvgnxBdtq/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
     '<embed src= "https://drive.google.com/file/d/1uxn3JWF7ZZWoX7MoqKBpnFCREhwJBIhO/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
     '<embed src= "https://drive.google.com/file/d/1-YbamvN9TD4dLo9R_4F3aR4dtqd8kg2_/preview" style="display: flex; justify-content: center;" width="100%" height="600">',
 ]
@@ -174,11 +173,26 @@ const experience = [
     link_name: "Technology Intern Program",
     demo_link: "https://campus.capitalone.com/technology-program?id=internship",
     site: "",
+    long_description: ["Developed dashboard automator to reduce arbitrary uniqueness and repetitive efforts for many of the dashboarding capabilities for 40K+ associates by standardizing and automating the process to create dashboards.", "Leveraged command line utilities and web interface to provide universal dashboard framework for UI using React, API using TypeScript & Python, AWS Infrastructure using EC2 & Lambda & ALB, lockbox secrets.", "Helped avoid replication efforts and jumpstart development across the company using existing Capital One design principles and technologies such as CICD, Docker, API Gateway."],
+    short_description: "",
+    date: "June 2021 - August 2021",
+
+    tab_name: "capitalone2021",
+    logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
+    pictures: [],
+  },
+  {
+    head_image: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
+    category_title: "Software Engineering Intern",
+    real_title: "Capital One",
+    link_name: "Technology Intern Program",
+    demo_link: "https://campus.capitalone.com/technology-program?id=internship",
+    site: "",
     long_description: ["Established first internal web presence for HR Tech using Angular & AWS by developing new brand portal", "Utilized Angular, Tableau, Git, Jira, Omnigraffle in agile fashion to accomplish software deliverables"],
     short_description: "",
-    date: "June 2020 - Present",
+    date: "June 2020 - August 2020",
 
-    tab_name: "capitalone",
+    tab_name: "capitalone2020",
     logo: "https://github.com/kevin-chen/trivia-web-app/raw/master/trivia/static/trivia/assets/co.png",
     pictures: [],
   },
@@ -246,6 +260,21 @@ const experience = [
 
 // Project Info
 const projects = [
+  {
+    head_image: "https://github.com/kevin-chen/SwiftUI-Tutorials/raw/master/calculator.png",
+    category_title: "COVID Doc Compliance",
+    real_title: "COVID Doc Compliance",
+    link_name: "Website",
+    demo_link: "https://covid-doc-compliance.herokuapp.com/",
+    site: "",
+    long_description: ["Developed full stack React web app to help small businesses comply with NYS reopening guidelines require that businesses to document their activities regarding proper adherence to safety measures such as cleaning logs, contact tracing, employee health screenings, screen reviews", "Built backend services using AWS to track business activity in the form of Google Sheets using Cognito for authentication, AppSync + DynamoDB for user information, API Gateway + Lambda for Google Sheets interactions, S3 for safety plan file storage"],
+    short_description: "",
+    date: "November 2020",
+
+    tab_name: "coviddoc",
+    categories: "Web",
+    pictures: ["https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/covid-doc-com-cleaning.png?alt=media&token=8df9a168-62ef-4d61-b7e7-50774b383430"],
+  },
   {
     head_image: "https://github.com/kevin-chen/SwiftUI-Tutorials/raw/master/calculator.png",
     category_title: "SwiftUI Tutorials - Calculator App",
@@ -431,6 +460,18 @@ const projects = [
 // Activities Info
 const activities = [
   {
+    head_image: "",
+    category_title: "",
+    real_title: "",
+    link_name: "",
+    demo_link: "https://hacknyu.org/",
+    site: "https://hacknyu.org/",
+    long_description: ["Worked in a team of other NYU students to create a website for registration for HackNYU 2020 Hackathon", "Developed registration for over 500 students using Quill"],
+    short_description: "Worked in a team of other NYU students to organize HackNYU 2020 Hackathon",
+    date: "October 2019 - Present",
+    tab_name: "hacknyu",
+  },
+  {
     head_image: "https://firebasestorage.googleapis.com/v0/b/web-port-folio.appspot.com/o/hacknyu-logo.png?alt=media&token=ff19dd5c-1a74-46c9-9cb2-3f97b40fdf0c",
     category_title: "HackNYU Tech Team",
     real_title: "",
@@ -439,7 +480,7 @@ const activities = [
     site: "https://hacknyu.org/",
     long_description: ["Worked in a team of other NYU students to create a website for registration for HackNYU 2020 Hackathon", "Developed registration for over 500 students using Quill"],
     short_description: "Worked in a team of other NYU students to organize HackNYU 2020 Hackathon",
-    date: "October 2019 - Present",
+    date: "October 2020 - May 2021",
     tab_name: "hacknyu",
   },
   {
@@ -451,7 +492,7 @@ const activities = [
     site: "",
     long_description: ["At its core, this project-based course aims to create research teams that will be at the forefront of designing and prototyping technological advances in the ever growing field of self-driving cars", "Perception Team involves learning and working with computer vision (Pytorch) to develop a working prototype of a self-driving vehicle", "This is a project that can involve quite diverse set of talents. We had a very humble start last year with a scrap golf cart and managed to win a very prestigious competition for autonomous vehicles. This exemplifies the potentials of team work at New York University."],
     short_description: "At its core, this project-based course aims to create research teams that will be at the forefront of designing and prototyping technological advances in the ever growing field of self-driving cars",
-    date: "September 2019 - Present",
+    date: "September 2019 - May 2020",
     tab_name: "selfdrive",
   }
 ]
@@ -505,11 +546,26 @@ const awards = [
 // Certification Info
 const certifications = [
   {
+    logo: "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect_Associate_badge_512x512.139edbefd4d7e9a16213032f592bdd8ca769dced.png",
+    category_title: "AWS Certified Solutions Architect - Associate (SAA)",
+    date: "Semtember 2021",
+    short_description: "Experienced in AWS architecture with internships, projects, hackathons",
+    tab_name: "aws_saa",
+    site: "https://www.credly.com/badges/b29bf7ac-ce01-4323-b8f5-2120507028b2"
+  },
+  {
+    logo: "https://assets-global.website-files.com/5fec9210c1841a81c9c6ce7d/6013b722160f9e0951bb4e66_2021%20Brand%20Open%20Graph%20image.png",
+    category_title: "Secure Code Warrior: Certified Secure Software Engineer",
+    date: "August 2021",
+    short_description: "Completed certification for secure developing in NodeJS in areas of SQL Injection, XSS Cross Site Scripting, OS/Remote Code Execution, Session Management and Access Control",
+    tab_name: "csse",
+    site: ""
+  },
+  {
     logo: "https://pbs.twimg.com/profile_images/1067796091460931584/3LHpiCyf.jpg",
     category_title: "CodePath iOS Bootcamp",
-    date: "Spring 2019",
+    date: "May 2019",
     short_description: "Joined iOS Bootcamp during Spring 2019 semester consisting of projects such as mock Instagram app",
-
     tab_name: "codepath",
     site: ""
   },
@@ -547,6 +603,22 @@ const summits = [
     logo: "https://impactlabs.io/assets/images/impact_labs.jpg",
     company: "Impact Labs",
     tab_name: "impactsummit",
+    pictures: [],
+  },
+  {
+    head_image: "https://miro.medium.com/max/2800/0*P8Szgdz2BVwcMFjP",
+    category_title: "TechFestival Hackathon",
+    real_title: "TechFestival",
+    link_name: "TechFestival",
+    demo_link: "",
+    site: "",
+    long_description: [""],
+    short_description: "",
+    date: "March 2019",
+
+    logo: "",
+    company: "",
+    tab_name: "",
     pictures: [],
   }
 ]
