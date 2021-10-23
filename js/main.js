@@ -1,6 +1,6 @@
 // Element variables
 const about = document.getElementById("about")
-const portfolio = document.getElementById("portfolio-cont")
+// const portfolio = document.getElementById("portfolio-cont")
 const expertise = document.getElementById("skill-cont")
 const jobsTab = document.getElementById("v-pills-tab")
 const jobsContent = document.getElementById("v-pills-tabContent")
@@ -610,7 +610,7 @@ const loadSummits = (list) => {
 
 // Main Call
 const main = () => {
-  loadPortfolio(portfolios)
+  // loadPortfolio(portfolios)
   loadSkills(skills)
   loadJobs(experience)
   loadProjects(projects)
